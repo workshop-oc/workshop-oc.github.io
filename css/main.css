@@ -2493,7 +2493,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-works {
     background: #FFFFFF;
-    padding: 0 0 15rem 0;
+    padding: 0 0 0 0; /* MD modified */
     min-height: 800px;
     position: relative;
 }
