@@ -2519,7 +2519,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .masonry .grid-sizer, .masonry__brick {
-    width: 50%;
+    width: 30%;
 }
 
 .masonry__brick {
