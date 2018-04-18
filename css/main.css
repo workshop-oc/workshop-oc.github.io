@@ -2796,6 +2796,7 @@ html.no-csstransitions .home-content__main {
     line-height: 1.8;
     color: #555555;
     margin-bottom: 6rem;
+    height: 18rem;
 }
 
 .clients-testimonials .testimonials__slide {
