@@ -2492,10 +2492,12 @@ html.no-csstransitions .home-content__main {
  * # works
  *
  * ------------------------------------------------------------------- */
+
+ /* MD modified */
 .s-works {
     background: #FFFFFF;
     padding: 0 0 0 0; /* MD modified */
-    min-height: 800px;
+    min-height: 700px;
     position: relative;
 }
 
