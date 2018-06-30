@@ -3,6 +3,19 @@
  *
  * ------------------------------------------------------------------- */
 
+var premiumOptions = $(".toggle_abstract");
+            $(premiumOptions).click(handleClick);
+
+            function handleClick() {
+              console.log("clicked");
+              var description = $(this).parent().find("section");
+              if (description.length) {
+                $(description).toggleClass("open closed");
+              };
+            };
+
+
+
 (function($) {
 
     "use strict";
