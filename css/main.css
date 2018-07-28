@@ -56,8 +56,8 @@
 
 
 /* MD abstracts */
-td em {display: inline-block; color: white;}
-td em:hover {text-decoration: underline; cursor: pointer;}
+td em.toggle_abstract {display: inline-block; color: white;}
+td em.toggle_abstract:hover {text-decoration: underline; cursor: pointer;}
 td section {padding-top: 1em; }
 .closed {
   overflow: hidden;
