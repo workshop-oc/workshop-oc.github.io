@@ -444,6 +444,7 @@ img.pull-left {
     margin: 1.5rem 3rem 0 0;
 }
 
+#bg {/* Preserve aspet ratio */ min-width: 100%; min-height: 100%}
 
 /* ------------------------------------------------------------------- 
  * ## tables
