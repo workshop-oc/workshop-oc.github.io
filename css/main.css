@@ -444,7 +444,16 @@ img.pull-left {
     margin: 1.5rem 3rem 0 0;
 }
 
-#bg {/* Preserve aspet ratio */ min-width: 100%; min-height: 100%}
+#bg {
+	margin: 2em auto;
+	text-align:center;
+}
+
+#bg img { /* Preserve aspet ratio */ 
+	border: 1px solid grey;
+	width: 100% !important;
+	max-width: 800px !important;
+}
 
 /* ------------------------------------------------------------------- 
  * ## tables
