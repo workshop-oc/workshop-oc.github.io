@@ -582,9 +582,9 @@ h3 {
 
 /* line 27, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
 .section_title h3 {
-  font-size: 46px;
+  font-size: 36px;
   font-weight: 500;
-  line-height: 58px;
+  line-height: 48px;
   margin-bottom: 0;
 }
 
@@ -669,7 +669,7 @@ h3 {
   content: "";
   width: 128px;
   height: 4px;
-  background-image: url(../img/speakers/line.png);
+  background-color:#39b54a;
   top: 50%;
   margin-bottom: 2px;
   right: -158px;
@@ -1100,7 +1100,7 @@ h3 {
   position: relative;
   margin-bottom: 213px;
   z-index: 3;
-  padding: 55px 8px 12px 0px;
+  padding: 15px 8px 12px 0px;
 }
 
 @media (max-width: 767px) {
@@ -1231,10 +1231,10 @@ h3 {
 
 /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area .title_text h3 {
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 700;
   text-transform: capitalize;
-  line-height: 100px;
+  line-height: 80px;
   color: #fff;
   margin-bottom: 66px;
 }
@@ -1750,7 +1750,7 @@ h3 {
   height: 100%;
   left: 0;
   bottom: 0;
-  background: rgba(255, 0, 0, 0.5);
+  background: #39b54a;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1790,7 +1790,7 @@ h3 {
   display: inline-block;
   line-height: 50px;
   font-size: 17px;
-  color: #FF0000;
+  color: #39b54a;
   margin: 0 7px;
 }
 
@@ -1811,7 +1811,8 @@ h3 {
 .speakers_area .single_speaker .speaker_name p {
   margin-bottom: 0;
   font-size: 16px;
-  color: #FF0000;
+  color: #39b54a;
+;
   font-weight: 400;
 }
 
