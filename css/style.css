@@ -31,16 +31,8 @@
 /* line 23, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
 .event_area .double_line::before, .event_area .double_line::after {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9600+0,fe531e+26,c022a5+57,1bb8f9+100 */
-  background: #ff9600;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9600', endColorstr='#1bb8f9',GradientType=1 );
-  /* IE6-9 */
+  background: #39b54a;
+
 }
 
 /* Normal desktop :1200px. */
@@ -2163,7 +2155,7 @@ h3 {
 .event_area .date h3 {
   font-size: 26px;
   font-weight: 500;
-  color: #FF0000;
+  color: #39b54a;
 }
 
 @media (max-width: 767px) {
