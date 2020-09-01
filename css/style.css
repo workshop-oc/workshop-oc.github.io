@@ -127,6 +127,8 @@ li {
   list-style: none;
 }
 
+#authors_contrib li {list-style: circle !important;}
+
 /* line 64, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
 p {
   font-size: 14px;
