@@ -31,7 +31,7 @@
 /* line 23, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
 .event_area .double_line::before, .event_area .double_line::after {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9600+0,fe531e+26,c022a5+57,1bb8f9+100 */
-  background: #39b54a;
+  background: #664E88;
 
 }
 
@@ -416,17 +416,17 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #0181F5;
+  border: 1px solid #5FD068;
   text-align: center;
-  color: #0181F5 !important;
+  color: #5FD068 !important;
   text-transform: uppercase;
 }
 
 /* line 15, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn:hover {
-  background: #0181F5;
+  background: #5FD068;
   color: #fff !important;
-  border: 1px solid #0181F5;
+  border: 1px solid #5FD068;
 }
 
 /* line 20, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
@@ -442,24 +442,24 @@ h3 {
 /* line 27, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn-green {
   background: #fff;
-  color: #39b54a;
+  color: #664E88;
   display: inline-block;
   padding: 16px 44px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   border: 0;
-  border: 2px solid #39b54a;
+  border: 2px solid #664E88;
   text-align: center;
-  color: #39b54a !important;
+  color: #664E88 !important;
   text-transform: capitalize;
 }
 
 /* line 41, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn-green:hover {
-  background: #39b54a;
+  background: #664E88;
   color: #fff !important;
-  border: 2px solid #39b54a;
+  border: 2px solid #664E88;
 }
 
 /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
@@ -663,7 +663,7 @@ h3 {
   content: "";
   width: 128px;
   height: 4px;
-  background-color:#39b54a;
+  background-color:#664E88;
   top: 50%;
   margin-bottom: 2px;
   right: -158px;
@@ -708,12 +708,12 @@ h3 {
 /* line 28, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #0181F5;
+  color: #5FD068;
 }
 
 /* line 32, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a.active {
-  color: #0181F5;
+  color: #5FD068;
 }
 
 @media (max-width: 767px) {
@@ -918,12 +918,12 @@ h3 {
 
 /* line 92, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-  color: #0181F5;
+  color: #5FD068;
 }
 
 /* line 95, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a.active {
-  color: #0181F5;
+  color: #5FD068;
 }
 
 /* line 99, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
@@ -1744,7 +1744,7 @@ h3 {
   height: 100%;
   left: 0;
   bottom: 0;
-  background: #39b54a;
+  background: #664E88;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1784,7 +1784,7 @@ h3 {
   display: inline-block;
   line-height: 50px;
   font-size: 17px;
-  color: #39b54a;
+  color: #664E88;
   margin: 0 7px;
 }
 
@@ -1805,7 +1805,7 @@ h3 {
 .speakers_area .single_speaker .speaker_name p {
   margin-bottom: 0;
   font-size: 16px;
-  color: #39b54a;
+  color: #664E88;
 ;
   font-weight: 400;
 }
@@ -1830,7 +1830,7 @@ h3 {
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_resister.scss */
 .resister_bg_1 {
   /* background-image: url(../img/banner/resister.png); */
-  background-color: #39b54a;
+  background-color: #664E88;
 }
 .resister_bg_1 p {
   color: white;
@@ -2157,7 +2157,7 @@ h3 {
 .event_area .date h3 {
   font-size: 26px;
   font-weight: 500;
-  color: #39b54a;
+  color: #664E88;
 }
 
 @media (max-width: 767px) {
@@ -2241,7 +2241,7 @@ h3 {
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
 .footer_bg_1 {
   /*background-image: url(../img/banner/footer_bg_1.png);*/
-  background-color: #39b54a;
+  background-color: #664E88;
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
@@ -2375,7 +2375,7 @@ h3 {
 
 /* line 91, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget ul li a:hover {
-  color: #0181F5;
+  color: #5FD068;
 }
 
 /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
@@ -4165,7 +4165,7 @@ h6 {
 
 /* line 14, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .blog_area a:hover, .blog_area a :hover {
-  background: -webkit-linear-gradient(131deg, #0181F5 0%, #0181F5 99%);
+  background: -webkit-linear-gradient(131deg, #5FD068 0%, #5FD068 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -4676,7 +4676,7 @@ h6 {
 
 /* line 544, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .blog_details a:hover {
-  color: #0181F5;
+  color: #5FD068;
 }
 
 /* line 549, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
@@ -4972,7 +4972,7 @@ h6 {
 
 /* line 842, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-  background: #0181F5;
+  background: #5FD068;
   color: #fff !important;
   -webkit-text-fill-color: #fff;
   text-decoration: none;
@@ -5220,7 +5220,7 @@ h6 {
 
 /* line 1208, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .single-post-area .blog-author a:hover {
-  color: #0181F5;
+  color: #5FD068;
 }
 
 /* line 1213, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
@@ -5649,7 +5649,7 @@ h6 {
 
 /* line 72, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
 .blog_part .single-home-blog .card .card-body a {
-  color: #0181F5;
+  color: #5FD068;
   text-transform: uppercase;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -5676,7 +5676,7 @@ h6 {
   height: 10px;
   top: 5px;
   left: 0;
-  background-color: #0181F5;
+  background-color: #5FD068;
   border-radius: 50%;
 }
 
