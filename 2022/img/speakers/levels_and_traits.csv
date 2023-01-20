@@ -1,0 +1,42 @@
+type,value,id
+background,plain,l01t01
+background,beams,l01t02
+background,beams and man at work sign,l01t03
+background,beams and cement mixer and man at work sign,l01t04
+head,homburg blue,l02t01
+head,gray hair,l02t02
+head,baseball cap red,l02t03
+head,beret orange,l02t04
+head,brown hair,l02t05
+head,beret vintage style,l02t06
+head,panama white,l02t07
+head,bucket hat,l02t08
+feet,brown smart,l03t01
+feet,white trainers,l03t02
+feet,leather sandals,l03t03
+feet,black & whire trainers,l03t04
+legs,green trousers,l04t01
+legs,brown trousers,l04t02
+legs,shorts brown,l04t03
+legs,two towers tattoo,l04t04
+legs,black trousers,l04t05
+legs,keys chain,l04t06
+body,green long jacket,l05t01
+body,t-shirt,l05t02
+body,bologna t-shirt,l05t03
+body,t-shirt and NFT backpack,l05t04
+body,long coat black,l05t05
+body,t-shirt and bag,l05t06
+body,t-shirt and tattoo,l05t07
+hands,plain,l06t01
+hands,shopping bag,l06t02
+hands,umbrella,l06t03
+hands,wood stick,l06t04
+hands,leather gloves,l06t05
+hands,NFT umarell shopping bag,l06t06
+hands,fingers tattoo,l06t07
+theme,clear sky,l07t01
+theme,sunset sky,l07t02
+theme,night blue sky,l07t03
+theme,lanterns lights,l07t04
+theme,fog,l07t05
