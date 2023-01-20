@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    
     <!-- custom css -->
     <link rel="stylesheet" href="css/custom.css">
 
@@ -61,7 +62,7 @@
                     <li><a class="smoothscroll"  href="#participants" title="participants">participants</a></li>
                     <li><a class="smoothscroll"  href="#organisers" title="organisers">organisers</a></li>
                     <li><a class="smoothscroll"  href="#sponsors" title="sponsors">sponsors</a></li>
-                    <li><a class="smoothscroll"  href="#venue" title="contact">contact</a></li>
+                    <li><a class="smoothscroll"  href="#venue" title="contact">venue</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">contact</a></li>
                     
                 </ul>
@@ -86,7 +87,7 @@
         <!--<div class="shadow-overlay"></div>-->
         <div class="home-content">
             <div class="row home-content__main">
-                <h3>September 3-5, 2018 | bologna, italy</h3>
+                <h3>October 26-27, 2023 | bologna, italy</h3>
                 <h1>
                   Workshop on Open Citations <br>& Open Scholarly Metadata 2023
                 </h1>
@@ -128,15 +129,22 @@
     <section id='about' class="s-about">
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead subhead--dark">the workshop</h3>
-                <h1 class="display-1 display-1--light">Information</h1>
+                <!--<h1 class="subhead subhead--dark">the workshop</h1>-->
+                <h1 class="display-1 display-1--light">THE WORKSHOP</h1>
             </div>
         </div> <!-- end section-header -->
         <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
                 <p>About 500 million open bibliographic citations are available on the web. We invite to this workshop researchers, scholarly publishers, funders, policy makers, and opening citations advocates, interested in the widespread adoption of practises for creation, reuse and improvement of open citation data.</p>
             </div>
-        </div> <!-- end about-desc -->
+            <div class="col-full justify-content-center">
+              <!--<div>Starts in: </div>-->
+              <div id="countdown"></div>
+            </div>
+        </div>
+        
+         <!-- end about-desc -->
+        <!--
         <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">               
             <div class="col-block stats__col ">
                 <div class="stats__count">2</div>
@@ -154,7 +162,7 @@
                 <div class="stats__count">60</div>
                 <h5>participants</h5>
             </div>
-        </div> <!-- end about-stats -->
+        </div>  --> <!-- end about-stats -->
         <!--<div class="about__line"></div>-->
     </section> <!-- end s-about -->
 
@@ -166,14 +174,18 @@
             <div class="col-full">
                 <h3 class="subhead">call for participation</h3>
                 <h1 class="display-2">Application</h1>
+                <p>To be announced ...</p>
+                <!--
                 <p>Applications are now closed! The program for platform presentations is complete, and places for the Hack Day all assigned. Should you want to attend the workshop, please contact the Workshop committee, and you'll be added to the waiting list.</p>
                 <p><strong>Application deadline</strong>:May 20, 2018 <br>
                     <strong>Notification of acceptance</strong>: <strike>June 1, 2018</strike> July 9, 2018 (for late applicants)<br>
                     <strong>Registration deadline</strong>: <strike>June 30, 2018</strike> July 13, 2018 (for late applicants)
                 </p>
                 <p>Proposals should address one of the following topics:</p>
+                -->
             </div>
         </div> <!-- end section-header -->
+        <!--
         <div class="row services-list block-1-2 block-tab-full">
 
             <div class="col-block service-item" data-aos="fade-up">
@@ -217,12 +229,14 @@
                     <p>Metrics, visualizations and other projects. The uses and applications of open citations, and bibliometric analyses and metrics based upon them.</p>
                 </div>
             </div>
-        </div> <!-- end services-list -->
+        </div> 
+        -->
+        <!-- end services-list -->
     </section> <!-- end s-services -->
 
    
     <!-- program
-    ================================================== -->
+    ================================================== 
     <section id='program' class="s-works">
 
         <div class="intro-wrap">
@@ -231,7 +245,9 @@
                 <div class="col-full">
                     <h1 class="display-2 display-2--light">Program</h1>
                 </div>
-                <h3 class="subhead">Day 1 | Monday, September 3</h3>
+                <h3 class="subhead">To be announced ...</h3>-->
+                <!--<h3 class="subhead">Day 1 | Monday, September 3</h3>-->
+                <!--
                 <table class="programme">
                     <tbody>
                         <tr><td>9:00-9:30</td> <td>Registration and breakfast</td></tr>
@@ -324,10 +340,12 @@
                         <tr><td>17:20-17:30</td><td>Closing 3rd day</td></tr>
                     </tbody>
                 </table>
-            </div> <!-- end section-header -->
+                
+            </div>
 
-        </div> <!-- end intro-wrap -->
-    </section> <!-- end s-works -->
+        </div>
+    </section>
+    -->
 
 
     <!-- organisers
@@ -1199,6 +1217,21 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/countdown.jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('#countdown').countdown({
+           year: 2023,
+           month: 10,
+           day: 26
+       });
+       $("#days").removeClass("col-xs-6 col-sm-3 animated rotateIn");
+       $("#hours").removeClass("col-xs-6 col-sm-3 animated rotateIn");
+       $("#minutes").remove();
+       $("#seconds").remove();
+    });
+      
+    </script>
 
 </body>
 
