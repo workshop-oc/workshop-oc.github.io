@@ -73,3 +73,10 @@ section{
 #about .subhead{
   color: white;
 }
+
+ul#editions{
+  list-style-type: none;  
+}
+ul#editions li::before {
+  content: "> ";
+}
