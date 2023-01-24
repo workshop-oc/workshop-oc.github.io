@@ -66,6 +66,17 @@
 				$('.time', '#' + k).text(v < 10 ? '0' + v : v.toLocaleString());
 				$('.label', '#' + k).text((v === 1 ? $.fn.countdown.singularize(k) : k));
 			});
+			
+			var l_countdown_time = document.getElementsByClassName('time');
+			for (var i = 0; i < l_countdown_time.length; i++) {
+				var digits = l_countdown_time[i].innerHTML.split("");
+				var html_digits = "";
+				for (var j = 0; j < digits.length; j++) {
+					html_digits += "<span class='digit_part'>"+digits[j]+"</span>";
+				}
+				l_countdown_time[i].innerHTML = html_digits;
+				console.log(l_countdown_time[i].innerHTML);
+			}
 		}
 
 		// Check if target date has beeen reached
