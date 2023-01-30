@@ -1,1166 +1,820 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Workshop on Open Citations and Open Scholarly Metadata</title>
-    <meta name="description" content="Workshop on Open Citations and Open Scholarly Metadata, Bologna 9 September 2020">
+    <title>Workshop on Open Citations</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css">
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 
-<body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+<body id="top">
 
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area ">
-                <div class="container-fluid p-0">
-                    <div class="row align-items-center justify-content-between no-gutters">
-                        <div class="col-xl-2 col-lg-2">
-                            <div class="logo-img">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-lg-8">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a class="active" href="index.html">home</a></li>
-                                        <li><a href="2020/index.html">Previous Workshop</a></li>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div>
+        <nav class="header-nav">
+            <a href="#0" class="header-nav__close" title="close"><span>close</span></a>
+            <div class="header-nav__content">
+                <h3>menu</h3>           
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">about</a></li>
+                    <!--<li><a class="smoothscroll"  href="#cfp" title="call for participation">call for participation</a></li>-->
+                    <!--<li><a class="smoothscroll"  href="#speakers" title="invited speakers">invited speakers</a></li>-->
+                    <!--<li><a class="smoothscroll"  href="#program" title="program">program</a></li>-->
+                    <!--<li><a class="smoothscroll"  href="#participants" title="participants">participants</a></li>-->
+                    <li><a class="smoothscroll"  href="#organisers" title="organisers">organisers</a></li>
+                    <li><a class="smoothscroll"  href="#venue" title="venue">venue</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">contact</a></li>
+                    <li><span title="editions">previous edition</span>
+                      <ul id="editions">
+                        <li><a href="https://workshop-oc.github.io/2018" title="2018">2018</a></li>
+                        <li><a href="https://workshop-oc.github.io/2020" title="2020">2020</a></li>
+                        <li><a href="https://workshop-oc.github.io/2022" title="2022">2022</a></li>
+                      </ul>
+                    </li>
+                    
+                </ul>
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://twitter.com/workshop_oc"><i class="fa fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div> <!-- end header-nav__content -->
+        </nav>  <!-- end header-nav -->
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
 
-                                        <!-- <li><a href="Schedule.html">Schedule</a></li>
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">elements</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="Speakers.html">Speakers</a></li>
-                                        <li><a href="Venue.html">Venue</a></li>
-                                        <li><a href="contact.html">Contact</a></li> -->
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 d-none d-lg-block">
-                            <div class="buy_ticket">
-                              <!--<a class="boxed-btn-white" href="https://www.facebook.com/sharer/sharer.php?u=https://workshop-oc.github.io/"><i class="fa fa-facebook"></i></a>-->
-                              <a class="boxed-btn-white" href="https://twitter.com/intent/tweet?url=https://workshop-oc.github.io/&text=The%203rd%20edition%20of%20the%20Workshop%20on%20%23OpenCitations%20and%20%23OpenScholarlyMetadata%2C%20%23Bologna%2C%205%20October%202022%20"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
-                                <!-- <a href="#" class="boxed-btn-white">Registration</a> -->
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/banner.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        <div class="overlay"></div>
+        <!--<div class="shadow-overlay"></div>-->
+        <div class="home-content">
+            <div class="row home-content__main">
+                <h3>October 26-27, 2023 | bologna, italy</h3>
+                <h1>
+                  Workshop on Open Citations <br>& Open Scholarly Metadata 2023
+                </h1>
+                <div class="home-content__buttons">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        contact us
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        info
+                    </a>
+                    <a href="#venue" class="smoothscroll btn btn--stroke">
+                        venue
+                    </a>
                 </div>
+            </div>
+            <!--
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+            <div class="home-content__line"></div>
+            -->
+        </div> <!-- end home-content -->
+        <ul class="home-social">
+            <li>
+                <a href="https://twitter.com/intent/tweet?url=https://workshop-oc.github.io/&text=The%204th%20edition%20of%20the%20Workshop%20on%20%23OpenCitations%20and%20%23OpenScholarlyMetadata%2C%20%23Bologna%2C%2026-27%20October%202023"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <!--<h1 class="subhead subhead--dark">the workshop</h1>-->
+                <h1 class="display-1 display-1--light">THE WORKSHOP</h1>
+            </div>
+        </div> <!-- end section-header -->
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>About 500 million open bibliographic citations are available on the web. We invite to this workshop researchers, scholarly publishers, funders, policy makers, and opening citations advocates, interested in the widespread adoption of practises for creation, reuse and improvement of open citation data.</p>
+            </div>
+            <div class="col-full justify-content-center">
+              <!--<div>Starts in: </div>-->
+              <h3 class="subhead">COUNTDOWN TO WOOC-2023</h3>
+              <div id="countdown"></div>
             </div>
         </div>
-    </header>
-    <!-- header-end -->
-
-    <!-- slider_area_start -->
-    <div class="slider_area slider_bg_1">
-        <div class="slider_text">
-            <div class="container">
-                <div class="position_relv">
-                    <h1 class="opcity_text d-none d-lg-block">3rd edition WOOC</h1>
-                    <div class="row">
-                        <div class="col-xl-9">
-                            <div class="title_text">
-                                <h3>Workshop <br>
-                                    on Open Citations and <br>
-                                    Open Scholarly Metadata <br>
-                                    2022 </h3>
-                                <a href="https://www.youtube.com/watch?v=82h_YVzA_CU" class="boxed-btn-white">Watch it again on Youtube</a>
-                                <!--<a href="https://www.youtube.com/watch?v=1R-5PytNrPM" class="boxed-btn-white">Watch it again on Youtube</a> -->
-                                <!--<a href="https://www.pscp.tv/workshop_oc" class="boxed-btn-white">Watch it again on Periscope</a> -->
-                                <!-- <a href="https://add.eventable.com/events/5e29937520f3e000cd71cc75/5e29937720f3e000cd71cc78" class="eventable-link" target="_blank" data-key="5e29937520f3e000cd71cc75" data-event="5e29937720f3e000cd71cc78" data-target="customAddCal"></a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://plugins.eventable.com/eventable.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'eventable-script');</script> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        
+         <!-- end about-desc -->
+        <!--
+        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">               
+            <div class="col-block stats__col ">
+                <div class="stats__count">2</div>
+                <h5>day workshop</h5>
             </div>
-        </div>
-
-        <div class="countDOwn_area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <div class="single_date">
-                            <i class="ti-location-pin"></i>
-                            <span>Online event</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single_date">
-                            <i class="ti-alarm-clock"></i>
-                            <span>5 Oct 2022, 15:20-18 CEST</span>
-                        </div>
-                    </div>
-                    <!--<div class="col-md-4">
-                        <div class="single_date">
-                            <i class="fa fa-youtube"></i>
-                            <span><a style="color: white; text-decoration: underline" target="_blank" href="https://youtube.com/channel/UCWkXcDhpItYq4qqVTzTeBqg">Live Streaming</a></span>
-                        </div>
-                    </div>-->
-
-                    <!-- <div class="col-xl-5 col-md-12 col-lg-5">
-                        <span id="clock"></span>
-                    </div> -->
-
-                </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">1</div>
+                <h5>day hackathon</h5> 
             </div>
-        </div>
-    </div>
-    <!-- slider_area_end -->
-
-    <!-- about_area_start -->
-    <div class="about_area">
-        <div class="shape-1 d-none d-xl-block">
-            <img src="img/about/shap1.png" alt="">
-        </div>
-        <!-- <div class="shape-2 d-none d-xl-block">
-            <img src="img/about/shap2.png" alt="">
-        </div> -->
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-md-6">
-                    <div class="about_thumb">
-                        <img src="img/about/group.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-5 offset-xl-1 col-md-6">
-                    <div class="about_info">
-                        <div class="section_title">
-                            <span class="sub_heading">2-hour and 40 minutes online event | 5 OCT 2022, 15:20 - 18:00 CEST</span>
-                            <h3>The 3rd Workshop<br>
-                                on Open Citations<br>
-                                and Open Scholarly Metadata <br>
-                                2022 </h3>
-                        </div>
-                        <p>A 3-hour online workshop for researchers, scholarly publishers, funders, policy makers, and opening citations advocates, interested in the creation, reuse, and improvement, of open citation data and open scholarly metadata, with invited speakers.</p>
-                        <!-- <a href="#" class="boxed-btn-green">More information coming soon!</a> -->
-                    </div>
-                </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">11</div>
+                <h5>invited speakers</h5>
             </div>
-        </div>
-    </div>
-    <!-- about_area_end -->
-
-
-    <!-- sessions start -->
-    <div class="whole-wrap">
-      <div class="container box_1170">
-        <div class="section-top-border">
-          <div class="section_title">
-              <span class="sub_heading">4 Sessions</span>
-              <h3>Topics</h3>
-              <p></p>
-          </div>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="single-defination">
-                <h4 class="mb-20">Reforming research assessment with open citations and open scholarly metadata</h4>
-
-              </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">60</div>
+                <h5>participants</h5>
             </div>
-            <div class="col-md-3">
-              <div class="single-defination">
-                <h4 class="mb-20">Artificial intelligence to support the extraction and analysis of citations and metadata</h4>
-
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="single-defination">
-                <h4 class="mb-20">Sustainability of open science infrastructures</h4>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="single-defination">
-                <h4 class="mb-20">Availability of open citations and open scholarly metadata in scholarly disciplines</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- sessions end-->
-    <!-- resister_book_start-->
-    <div class="resister_book resister_bg_1" id="submit_abstract">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="resister_text text-center">
-                        <h3>Call for contributions</h3>
-                        <p>Authors are invited to submit a short abstract (500 words max.) that fits one of the four sessions topics. Authors of selected contributions will be asked to record a 5-minute video presentation, publish it on any favourite social platform (e.g. Youtube), and forward the URL to organisers. Organisers will collect video links and make them available on both the workshop website and in a dedicated online space for engaging with interested parties and encouraging a broader discussion.</p>
-                        <!--<a href="https://forms.gle/FdrYLfKjL9quf9Ht8" class="boxed-btn-white">Submit your abstract</a>-->
-                        <p></p>
-                        <p><del><strong>Submission deadline:</strong> 11 September 2022 23:59 CEST</del></p>
-                        <p><del><strong>Notification deadline:</strong> 18 September 2022 23:59 CEST</del></p>
-                        <p><del><strong>Video preparation deadline:</strong> 30 September  2022 23:59 CEST</del></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- resister_book_end -->
-
-    <!-- call for app start-->
-    <!-- <section class="sample-text-area">
-      <div class="container box_1170">
-        <h3 class="text-heading">Call for applications</h3>
-        <p class="sample-text">
-          To be announced
-        </p>
-      </div>
-    </section> -->
-    <!-- call for app end-->
+        </div>  --> <!-- end about-stats -->
+        <!--<div class="about__line"></div>-->
+    </section> <!-- end s-about -->
 
 
-
-
-    <!-- speakers_start -->
-    <div class="speakers_area">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="serction_title_large mb-95">
-                        <h3>
-                            Invited speakers
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-
-                   <div class="col-md-3">
-                     <div class="single_speaker">
-                         <div class="speaker_thumb">
-                             <img src="img/speakers/claudio.png" alt="">
-                             <div class="hover_overlay">
-                               <div class="social_icon">
-                                   <a href="https://www.linkedin.com/in/claudio-aspesi-3966088"><i class="fa fa-linkedin"></i></a>
-                               </div>
-                             </div>
-                         </div>
-                         <div class="speaker_name text-center">
-                             <h3>Claudio Aspesi</h3>
-                             <p>Independent Consultant, Zurich, Switzerland</p>
-                         </div>
-                     </div>
-                   </div>
-
-                   <div class="offset-md-1 col-md-3">
-                       <div class="single_speaker">
-                           <div class="speaker_thumb">
-                               <img src="img/speakers/chodacki.png" alt="">
-                               <div class="hover_overlay">
-                                 <div class="social_icon">
-                                     <a href="https://twitter.com/chodacki"><i class="fa fa-twitter"></i></a>
-                                 </div>
-                               </div>
-                           </div>
-                           <div class="speaker_name text-center">
-                               <h3>John Chodacki</h3>
-                               <p>Director, University of California Curation Center (UC3)</p>
-                           </div>
-                       </div>
-                   </div>
-
-                    <div class="offset-md-1 col-md-3">
-                      <div class="single_speaker">
-                          <div class="speaker_thumb">
-                              <img src="img/speakers/ana_istrate.jpg" alt="">
-                              <div class="hover_overlay">
-                                <div class="social_icon">
-                                    <a href="https://www.linkedin.com/in/amistrate"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="speaker_name text-center">
-                              <h3>Ana-Maria Istrate</h3>
-                              <p>Research Scientist, Chan Zuckerberg Initiative</p>
-                          </div>
-                      </div>
-                  </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-3">
-                  <div class="single_speaker">
-                      <div class="speaker_thumb">
-                          <img src="img/speakers/jennifer_lin.jpg" alt="">
-                          <div class="hover_overlay">
-                            <div class="social_icon">
-                                <a href="https://www.linkedin.com/in/jennifer-lin-5b69631"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="speaker_name text-center">
-                          <h3>Jennifer Lin</h3>
-                          <p>Product Director, Indeed</p>
-                      </div>
-                  </div>
-                </div>
-
-                  <div class="offset-md-1 col-md-3">
-                    <div class="single_speaker">
-                      <div class="speaker_thumb">
-                          <img src="img/speakers/alberto_martin.png" alt="">
-                          <div class="hover_overlay">
-                              <div class="social_icon">
-                                  <a href="https://twitter.com/albertomartin"><i class="fa fa-twitter"></i></a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="speaker_name text-center">
-                          <h3>Alberto Martín-Martín</h3>
-                          <p>Assistant professor, Facultad de Comunicación y Documentación, Universidad de Granada</p>
-                     </div>
-                    </div>
-                  </div>
-
-                  <!--
-                  <div class="offset-md-1 col-md-3">
-                        <div class="single_speaker">
-                            <div class="speaker_thumb">
-                                <img src="img/speakers/victoria.png" alt="">
-                                <div class="hover_overlay">
-                                    <div class="social_icon">
-
-                                        <a target="_blank" href="https://www.jisc.ac.uk/staff/victoria-moody"><i class="fa fa-paperclip"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="speaker_name text-center">
-                                <h3>Victoria Moody</h3>
-                                <p>Director of Research and innovation sector strategy, Jisc</p>
-                                <p>Co-Investigator and Deputy Director, UK Data Service</p>
-                            </div>
-                        </div>
-                  </div>
+    <!-- call for participation
+    ================================================== -->
+    <section id='cfp' class="s-services">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">call for participation</h3>
+                <h1 class="display-2">Application</h1>
+                <p>To be announced ...</p>
+                <!--
+                <p>Applications are now closed! The program for platform presentations is complete, and places for the Hack Day all assigned. Should you want to attend the workshop, please contact the Workshop committee, and you'll be added to the waiting list.</p>
+                <p><strong>Application deadline</strong>:May 20, 2018 <br>
+                    <strong>Notification of acceptance</strong>: <strike>June 1, 2018</strike> July 9, 2018 (for late applicants)<br>
+                    <strong>Registration deadline</strong>: <strike>June 30, 2018</strike> July 13, 2018 (for late applicants)
+                </p>
+                <p>Proposals should address one of the following topics:</p>
                 -->
             </div>
+        </div> <!-- end section-header -->
+        <!--
+        <div class="row services-list block-1-2 block-tab-full">
 
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-megaphone"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Opening up citations</h3>
+                    <p>Initiatives, collaborations, methods and approaches for the creation of open access to bibliographic citations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-fast-forward"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Policies and funding</h3>
+                    <p>Strategies, policies and mandates for promoting open access to citations, and transparency and reproducibility of research and research evaluation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
+                </div>  
+                <div class="service-text">
+                    <h3 class="h2">Publishers and learned societies</h3>
+                    <p>Approaches to, benefits of, and issues surrounding the deposit, distribution, and services for open bibliographic metadata and citations.</p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Projects</h3>
+                    <p>Metrics, visualizations and other projects. The uses and applications of open citations, and bibliometric analyses and metrics based upon them.</p>
+                </div>
+            </div>
+        </div> 
+        -->
+        <!-- end services-list -->
+    </section> <!-- end s-services -->
+
+   
+    <!-- program
+    ================================================== 
+    <section id='program' class="s-works">
+
+        <div class="intro-wrap">
+                
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h1 class="display-2 display-2--light">Program</h1>
+                </div>
+                <h3 class="subhead">To be announced ...</h3>-->
+                <!--<h3 class="subhead">Day 1 | Monday, September 3</h3>-->
+                <!--
+                <table class="programme">
+                    <tbody>
+                        <tr><td>9:00-9:30</td> <td>Registration and breakfast</td></tr>
+                        <tr><td>9:30-9:40</td> <td>Greetings by FICLIT representative (Francesca Tomasi, DHDK Director) <a href="https://www.youtube.com/watch?v=GQnhX6pIYFw&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=2&t=0s" target="_blank">[video]</a></td></tr>
+                        <tr><td>9:40-9:50</td> <td>Workshop introduction by David Shotton <a href="presentations/D1S0_intro_David_Shotton.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=IP7OHh344rQ&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=3&t=0s" target="_blank">[video]</a></td></tr>
+                        <tr><td>9:50-10:20</td> <td>[Invited talk] Dario Taraborelli (Wikimedia Foundation / I4OC) <em class="toggle_abstract">Remixing the graph </em> <a href="https://doi.org/10.6084/m9.figshare.7038695.v3" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=Go3k7IIC7LY&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=4&t=0s" target="_blank">[video]</a> <section class="closed">Over the past years, several datasets representing free-to-read (or partially reusable) citation data have been made available to researchers and bibliometricians. However, what one can build on top of an open citation graph vastly exceeds the value of free-to-read citation data. In this talk, I introduce the Initiative for Open Citations (I4OC) and present a key example of reuse and remix of open citation data in Wikidata — the free knowledge base that anyone can edit. With its open human and algorithmic curation model, Wikidata allows embedding bibliographic and citation datasets in a much richer set of relations compared to most citation indexes. It supports novel use cases that go beyond bibliometric analysis and thanks to its open nature it makes gaps and quality issues in the underlying citation data easily auditable.</section></td></tr>
+                        <tr><td>10:20-10:50</td> <td>[Invited talk from the organising committee] Johanna McEntyre (Europe PMC) <em class="toggle_abstract">Open Citations and Europe PMC </em> <a href="presentations/D1S2_Johanna_McEntyre.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=V7l57DH2A9w&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=5&t=0s" target="_blank">[video]</a><section class="closed">Europe PMC is a database of the life sciences research literature, contains over 30M abstracts, including PubMed and 5M full text articles. The mission of Europe PMC is to make the content as widely available as possible, which we do via the website, APIs and bulk downloads. Built in partnership with PMC USA, with whom the full text articles are shared, Europe PMC adds value to the core content in a number of ways, one of which is to generate article-level citation counts. These are generated via the references lists from the full text article in Europe PMC, supplemented with reference lists from Crossref metadata services. With the formation of IO4C, we have seen a dramatic increase in the number of citations we have been able to add to the Europe PMC network, data that we redistribute via the website and APIs. In this talk I will describe how Europe PMC manages, distributes and reuses open citations.</section></td></tr>
+                        <tr><td>10:50-11:20</td> <td>Coffee break</td></tr>
+                        <tr><td>11:20-11:50</td> <td>[Invited talk from the organising committee] David Shotton (OpenCitations) <em class="toggle_abstract">Why and how should we share citations openly </em> <a href="presentations/D1S3_David_Shotton.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=way0Gfla9uk&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=6&t=0s" target="_blank">[video]</a><section class="closed">In this presentation, I will outline the importance of citations in the world of scholarship, and how early on academics missed the boat for open citation information, leading to the growth of commercial citation indexes. After discussing problems with commercial citation indexes – cost, data availability, visualization tools, and variation in citation statistics – I will mention recent initiatives to reclaim citations for the world of open scholarship: The Initiative for Open Citations, Crossref as a reference repository, WikiCite, OpenCitations as a scholarly infrastructure organization, and the OpenCitations Corpus. I will introduce a formal definition of an open citation, and will outline the the SPAR (Semantic Publishing and Referencing) ontologies and OpenCitations Data Model that we at OpenCitations have developed to facilitate the creation of machine-readable open citation data. I will then describe the requirements for citations to be treated as first-class data entities, and the new global persistent identifier for citations that we have developed, the Open Citation Identifier (OCI), and will conclude by showing how OCIs can be used to create simple citation indexes of open citation sources such as the Crossref Open Citations Index.</section></td></tr>
+                        <tr><td>11:50-12:20</td> <td>[Invited talk from the organising committee] Philipp Mayr (EXCITE) <em class="toggle_abstract">Recent advances in the project EXCITE - Extraction of Citations from PDF Documents </em> <a href="https://www.slideshare.net/Philipp_Mayr/recent-advances-in-the-project-excite-extraction-of-citations-from-pdf-documents-113329062" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=2_CfcHN8lHA&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=7&t=0s" target="_blank">[video]</a><section class="closed">The "Extraction of Citations from PDF Documents" - EXCITE project at GESIS - Leibniz Institute for the Social Sciences and University of Koblenz-Landau is in line with the Open Citations Initiative and aims to make more citation data available to researchers with a particular focus on the social sciences. The shortage of citation data for the international and German social sciences is well known to researchers in the bibliometrics field and has itself often been subject to academic studies. In order to open up citation data in the social sciences, the EXCITE project develops a set of algorithms for the extraction of citation and reference information from PDF documents and the matching of reference strings against bibliographic databases. The presentation focuses on the overall reference extraction, matching and publication workflows and tool chain. A demo of the web demonstrator completes the talk.</section></td></tr>
+                        <tr><td>12:20-12:50</td> <td>[Invited talk] Ginny Hendricks (Crossref) <em class="toggle_abstract">Crossref: underpinning citation opportunities </em> <a href="presentations/D1S5_Ginny_Hendricks.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=7R3XE1NiG_c&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=8&t=0s" target="_blank">[video]</a> <section class="closed">no spoilers</section></td></tr>
+                        <tr><td>12:50-14:00</td> <td>Lunch</td></tr>
+                        <tr><td>14:00-14:10</td> <td>Announcements</td></tr>
+
+                        <tr><td>14:10-14:25</td> <td>[Selected talk] Martin Fenner (DataCite) <em class="toggle_abstract">Open Citations and Data Citations </em> <a href="presentations/D1S6_Martin_Fenner.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=EFSuNIDRSWk&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=9&t=0s" target="_blank">[video]</a> <section class="closed">While the focus of open citations is on opening up the reference lists of publishers working with Crossref, open citations is also highly relevant for citations of scholarly content that uses DataCite DOIs. The number of data citations in the metadata that publishers send to Crossref is very small. This presentation will discuss the current issues and how this situation can be improved going forward.</section> </td></tr>
+
+                        <tr><td>14:25-14:40</td> <td>[Selected talk] Luc Boruta (Thunken) <em class="toggle_abstract">Cobaltmetrics: preventing citation decay and obfuscation </em> <a href="https://figshare.com/articles/Cobaltmetrics_preventing_citation_decay_and_obfuscation_Workshop_on_Open_Citations_2018_09_03/7038797" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=nkxFxl6Mh_I&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=10&t=0s" target="_blank">[video]</a> <section class="closed">Scholarly communication becomes more and more electronic, and scholarly literature becomes more than just papers. In this context, hyperlinks are the preferred way to reference published or unpublished sources, including datasets and software. While hyperlinks are more powerful than text-based citations in terms of user experience, they are prone to link rot. Shortened URLs add an extra level of indirection that increases the risk of breaking the permanent record of science. Cobaltmetrics monitors trusted sources to index citations, identifiers, and hyperlinks. We go deeper than other altmetrics providers. We mine data in 180+ languages, we unroll shortened URLs from 175+ shorteners, we crack open URLs to extract persistent identifiers, and we convert between 50+ types of identifiers. We will provide empirical data from an analysis of 73.5 millions documents, 52.5 million citations and backlinks, and a database of 6.5 billion shortened URLs, focusing on the effects of reference rot on altmetrics indicators. We will then present good practices that all stakeholders should adopt and, most importantly, technical solutions that altmetrics providers should implement to compensate the effects of link rot and URL variability.</section></td></tr>
+
+                        <tr><td>14:40-14:55</td> <td>[Selected talk] Ludo Waltman (Leiden University) <em class="toggle_abstract">Comparing bibliographic data sources </em> <a href="https://www.slideshare.net/LudoWaltman/comparing-bibliographic-data-sources" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=Fu5KuS8omT8&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=11&t=0s" target="_blank">[video]</a> <section class="closed">In this talk, I will present a comparative perspective on a number of major bibliographic data sources, both ‘open’ and ‘closed’ sources. The comparison includes Web of Science, Scopus, Dimensions, Crossref, and OpenCitations Corpus. I will put special emphasis on the accuracy of the data provided by the different sources. Performing large-scale comparisons of bibliographic data sources is challenging, and therefore I will also discuss the main gaps that we have in our understanding of the strengths and weaknesses of different data sources and ways in which these gaps can be filled.</section></td></tr>
+
+                        <tr><td>14:55-15:10</td> <td>[Selected talk] Jodi Schneider (University of Illinois at Urbana-Champaign) <em class="toggle_abstract">Detecting problematic citation patterns with the Open Citations Corpus </em> <a href="presentations/D1S9_Jodi_Schneider.pptx" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=nuS6iBCULvQ&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=12&t=0s" target="_blank">[video]</a> <section class="closed">The structure of citation networks provides evidence about how scientific information is diffused. Problematic citation patterns include the selective citation of positive findings, citation bias, as well as the continued citation of retracted literature (i.e. literature formally withdrawn due to error, fraud, or ethical problems). For instance, there is some evidence that positive results tend to receive more citations.The public domain licensing of the Open Citations Corpus makes it possible, in principle, to estimate the likelihood that any network of research papers suffers from problematic citation. To-date, problematic citation been documented ad-hoc, in several striking studies. In Alzheimer's disease research, biased citation, ignoring critical findings, was used to support successful U.S. NIH grant proposals (Greenberg 2009). Mistranslation of obesity research has been used to justify exertion game research (Marshall &amp; Linehan 2017). Citation of fraudulent research about Chronic Obstructive Pulmonary Disease continued after its retraction (Fulton et al. 2015). The data resulting from such studies is of great use to my lab in replicating and determining how to generalize the detection of problematic citation patterns. Previously, the detection of problematic citation patterns has been a side effect of astute researchers, noticing suspicious findings while conducting systematic literature reviews. This talk will describe work-in-progress in my lab detecting problematic citation patterns using natural language processing, combined with network analysis on the Open Citations Corpus.</section></td></tr>
+
+                        <tr><td>15:10-15:25</td> <td>[Selected talk] Anne Lauscher (Universität Mannheim), Kai Eckert (Hdm Stuttgart), Lukas Galke (ZBW Kiel) <em class="toggle_abstract">Libraries as Curators of Open Citations: perspectives of the project LOC-DB in Germany </em> <a href="presentations/D1S10_Anne_Lauscher.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=4zGzqY_-pVI&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=13&t=0s" target="_blank">[video]</a> <section class="closed">Creation of citation data is not part of the cataloging workflow in libraries nowadays – but traditional tasks are changing, and libraries have a decided interest in the availability of open citation data that can be used for retrieval and bibliometrics. We have started the Linked Open Citation Database (LOC-DB) project to enable libraries to contribute to the creation and curation of open citations. We provide an interface for librarians to incrementally catalog citation metadata with low effort. The librarians are supported by a wide range of helpful tools such as a reference extractor for print as well as digital documents along with a suggestion engine, which harvests external data sources for citation candidates. The database itself is prepared for distributed deployment, such that multiple libraries can collaborate. At any time, the data can be supplied as linked data in the OpenCitations data format. The goal is to show that efficiently cataloging citations of print and electronic resources in libraries is possible. In the presentation, we’ll describe the current state of the workflow and its implementation. We show that automatic reference extraction from scanned print resources could be significantly improved with the implementation of an automatic reference extraction component based on deep learning-based approach. We further give insights on the curation and linking process and provide first evaluation results.</section></td></tr>
+
+                        <tr><td>15:25-15:40</td> <td>[Selected talk] Matteo Romanello (École polytechnique fédérale de Lausanne), Giovanni Colavizza (The Alan Turing Institute) <em class="toggle_abstract">The Scholar Index: a Distributed, Collaborative Citation Index for the Arts and Humanities </em> <a href="https://doi.org/10.5281/zenodo.1410916" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=A6iZvBs2IHU&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=14&t=0s" target="_blank">[video]</a> <section class="closed">Freeing citation data is an issue of essential importance and urgency for scholarly communication, which has been recently getting the attention it deserves thanks to the <a href="https://i4oc.org/">Initiative for Open Citations</a>. Simultaneously, we should be concerned as well with another complementary issue, that is the necessity to "recover" citation data from  digitized publications. This applies especially to the Humanities, where fields often have century-long traditions. Otherwise, we risk to create citation indexes that take into account only recent publications, mostly in English, while a gap ensues for citations buried in older publications. The creation of a comprehensive citation index for the Arts and Humanities, however, is a titanic endeavour which can only be accomplished with a collaborative, distributed approach, where cultural heritage institutions (e.g. libraries, archives, etc.) play a key role. In this talk we present The Venice Scholar, a citation index of literature on the history of Venice, indexing nearly 3000 volumes of scholarship from the mid 19th century to 2013, from which some 4 million bibliographic references have been extracted. The Venice Scholar, to be publicly launched in September 2018, is the first running instance of the Scholar Index, a platform aimed at creating a comprehensive citation index for the Arts and Humanities. This platform consists of two applications, the Scholar Library (SL) and the Scholar Index (SI), both to be released soon under an open source license.The SL is a digital library system where partner institutions can load their digitized scholarly literature. The system embeds the necessary machine learning components to recognize the text from an image (OCR), extract references and link them to unique identifiers, pointing to external resources (e.g. library catalogues). Each partner institution keeps an instance of the digital library system and its own collection.The SI is the global citation index, which federates all citations extracted from different institutions into a unique index, and provides a rich search interface to navigate through the resulting network of citations, with the final aim of interlinking digital archives and digital libraries. In fact, the SI is currently being extended, thanks to an Europeana Reserach Grant, to provide contextual recommendations of related digital objects from Europeana to its users. The citation data underlying the Venice Scholar are modelled using the OpenCitations Data Model, and will use the OpenCitations Corpus as its publication platform, thus enriching this corpus with some 4 million references "recovered" from historical and current publications about the history of Venice. To conclude, we believe that the creation of a citation index for Arts and Humanities can only be accomplished through a collaborative and federated approach, and by leveraging infrastructure synergies, such as the one with the Open Citation Corpus. In this process, libraries and other institutions should take responsibility for specific areas of knowledge (e.g. a journal, a publisher, or a topic) and, at the same time, be facilitated (e.g. through software) in the task of enriching their digitized collections with citation data.</section></td></tr>
+
+                        <tr><td>15:40-16:10</td> <td>[Invited talk] Stephanie Dawson (ScienceOpen) <em class="toggle_abstract">Open Citations in Action: Case Study ScienceOpen </em> <a href="presentations/D1S12_Stephanie_Dawson.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=9h0ZwfU48r0&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=15&t=0s" target="_blank">[video]</a><section class="closed">Viewed collectively, an article’s references contain a wealth of information. Networks of citations can trace the genealogy of ideas, and through reference lists one can see methods, theories, and ideologies introduced and die away. Until recently, the references of an article were under strict copyright control and tracking citations was left up to big business, but the open science movement has started to change that. New initiatives such at the I4OC Initiative for Open Citations are spearheading a growing consensus that citations are metadata and therefore should be freely accessible via Crossref, regardless of article license type. The discovery platform ScienceOpen is a case study in the kind of search environment that can be built on top of an open citations commons. ScienceOpen recently added over 100 million citation connections between articles, and uses its powerful search engine to expose this knowledge to researchers for a richer discovery experience. This enables us to provide users with tools to track their own article citations through time, trace citation networks, discover similar articles, discover highly-cited articles in a research field, sort searches by citations, and ultimately create a vast, contextual citation-based network for an intelligent search and discovery experience. ScienceOpen provides a good example of your open citations – and open science in action.</section></td></tr>
+                        <tr><td>16:10-18:00</td> <td>Coffee break and Poster session</td></tr>
+                        <tr><td></td> <td>[Poster] Angelo Di Iorio (University of Bologna) <em class="toggle_abstract">Semantic Coloring of Academic References </em> <a href="presentations/Poster_SCARproject_Updated.pdf" target="_blank">[pdf]</a> <section class="closed">The talk introduces the SCAR project, a collaboration between the University of Bologna and Elsevier, whose goal is to enrich citations with explicit information about their role, features and impact. The name of the project - Semantic Coloring of Academic References - reflects the fact that bibliographies should not be considered as plain lists of entries, but as lists of qualified references that need to be identified and shown appropriately, e.g. by means of different colors. Multiple coloring schemes can be applied to the same bibliography according to different criteria, such as publication year, authorship, citation contexts, justification for citing and so on. The goal of SCAR is to build a prototype that extracts such information from the full text of the articles and enriches bibliographies with such metadata. The project was not originally linked to Open Citation but its results and issues could be relevant for OC, just as OC tools and data could be beneficial for SCAR.</section></td></tr>
+                        <tr><td></td> <td>[Poster] Bianca Kramer (Utrecht University Library) <em class="toggle_abstract">DOI wanted - community involvement in open citations </em> <a href="https://doi.org/10.6084/m9.figshare.7011689" target="_blank">[pdf]</a> <section class="closed">Open citations are an important cogwheel in the engine of open scholarly infrastructure. At the same time, their development shows both the power and limitations of established parties, restricting their potential use for the wider scholarly community. For example, the quality of open citations as metadata provided by publishers is often still suboptimal. It can be argued that stricter requirements as to the format and quality of such metadata would discourage publishers from supplying them in the first place (thus slowing the growth of the number of open citations made available). In combinaton with limiting the supply of open citation metadata to publishers, though, a catch-22 situation is created that limits the quality of open citations, and thus, their usability. Simultaneously, commercial parties have ingested these incomplete metadata and improved on them, only to subsequently monetize their use in applications without contributing back to the underlying corpus of open data. While there is rightly no limitation on the use and reuse of open citations, I would like to explore models that would better allow the scholarly community to contribute to the quality and value of open citations metadata on one hand, and encourage  their sustainable use on the other hand. The former could be envisioned through forms of crowdsourced improvement of open citations metadata (in which Wikidata could play an important role). An example of the latter would be the monetization of services built on enriched open citation data, without enclosing the data itself. Both models would enable the scholarly community as a whole to not only make optimal use of open citations, but also contribute to their value. By making the wheels turn smoother, we'll collectively get further!</section></td></tr>
+                        <tr><td></td> <td>[Poster] Astrid Orth (SUB Göttingen) <em class="toggle_abstract">How do citation-based and alternative metrics benefit each other? </em> <a href="https://metrics-project.net/downloads/metrics_poster_download.pdf" target="_blank">[pdf]</a> <section class="closed">I would like to present the approach of the *metrics project to measure the reliability and perceptions of indicators for interactions with scientific products: 1. analysis of how researchers (focussing on social sciences and economics) interact on social media platforms and how their motivations form patterns that need to be taken into account when measuring output on social media channels. 2. provision of a social media registry with functions and accessibility of social media platforms relevant for scholarly communication, and 3. prototype of a crawler that gives insights in the reliability of current social media metrics. The combination of these 3 elements allow a larger degree of transparency when studying scholarly communication. Some shortfalls of alternative metrics are becoming obvious, but can comparably seen in citation metrics. It should thus be most interesting to discuss during this workshop how open citation-based and alternative metrics can benefit each other in providing a complete and true picture of scholarly communication.</section></td></tr>
+                        <tr><td></td> <td>[Poster] John Samuel (CPE Lyon) <em class="toggle_abstract">WikiProvenance: Are there enough references to every (known) fact on Wikidata? </em> <a href="presentations/Poster_Samuel.pdf" target="_blank">[pdf]</a> <section class="closed">In a collaborative website like Wikidata, contributors add statements about an item like a person, a scientific subject, a historical place etc.  Each of these statements need to be backed by a reference. Yet a large number of statements are added without references. Even well-described items (i.e., the items with a lot of statements) like Douglas Adams, Albert Einstein do not have references on all these facts. During the past few years, there has been a lot of focus on increasing the number of statements of items usually referred to as the item completion efforts. Yet, the references to statements cannot be undermined. That being said, it is equally important to understand the use of external identifiers and links to existing multilingual Wikimedia projects for these items. Since many of these sources also contain a large number of references. Both contributors and users need to get an overview on the reference statistics. With WikiProvenance[1], the goal is to understand and delve into details of the usage of references, the links to external sources in an open and transparent manner. [1] <a href="https://rawgit.com/johnsamuelwrites/WikiProvenance/master/index.html">https://rawgit.com/johnsamuelwrites/WikiProvenance/master/index.html</a></section></td></tr>
+                        <tr><td></td> <td>[Poster] Gautam Kishore Shahi (University of Trento) <em class="toggle_abstract">Semantics Aware Policy Making for Open Citations</em> <section class="closed">Policy-making is one of the significant fields of research in which an organization tries to improve itself or its existing systems by reformations. Citation plays a vital role in the area of research. It has also been studied that due to lack of proper analysis of available resources, the dispensation of funds is uneven. In this paper, a semantic web-based system is proposed which focuses on extracting right knowledge about the Citation. The information can then be used for policy-making by the respective Organization. An ontology model has been proposed for this task. The central area of focus has been to extract only those information which is useful in citation policy-making. Therefore, knowledge of ontology and citation has been combined to produce a semantic web-based citation policy-making.</section></td></tr>
+                        <tr><td></td> <td>[Poster] Angelika Tsivinskaya (Center for Institutional Analysis of Science &amp; Education, European University at Saint Petersburg) <em class="toggle_abstract">Bibliographic metrics as performance evaluation measure for Higher Education Institutions in Russia </em> <a href="presentations/Poster_Tsivinskaya.pdf" target="_blank">[pdf]</a> <section class="closed"><p>Since 2006, Russian government made energetic attempts to boost academic performance of the country’s universities, to shut down underperforming institutions and to turn the survivors into world-class schools. Since 2012, Russian policies in the higher education sphere were largely directed by the results of the Survey of efficiency of higher education organizations (Monitoring of Efficiency of Educational Organizations) – a set of quantitative performance indicators used to sort efficient from non-efficient organizations. There are also several governmental programs for funding best universities, one of them is “5–top 100” started in 2013. Most of those initiatives include assessment of publication activity. Searchers showed that this funding programs had positive effects on publication activity (Turko, 2016) and there are also studies about collaborations for most citied papers (Pislyakov, 2014). Those studies mostly focused on successful universities and its specific characteristics. Many universities are closely connected to small number of fields and currently used bibliographic metrics do not consider this difference between publication dynamics across fields (Piro, 2014). The main purpose of our study to show how representation of universities in different citation systems depends on such factors as: public or private; localized in a bigger city or a wealthy region; nominal profile (based partly on ties to specific fields); age;  ecological situation at a local market for higher education. For purposes of our study we used data collected from Monitoring of Efficiency 2013-2017 which include (per 100 academic employees): Number of citations in Web of Science, Number of citations in Scopus, Number of citations in Russian Scientific Citation Index, Number of publications in Web of Science, Number of publications in Scopus, Number of publications in Russian Scientific Citation Index. Our study shows that facing publication pressures universities have a stable positive trend in number of publications but our data shows that extreme variability of bibliographic metrics exist between different university families. Thus, so-called “classical”, polytechnic and medical universities have higher median number of publication in Web of Science that others, while universities majoring in social and economic sciences, especially ones attached to various ministries have the highest median number of publication in Russian Scientific Citation Index. The results show that the ascriptive variables account for a large share of variance, with families being particularly important.</p> <p>References: Piro F. N., Aksnes D. W., Rørstad K. (2013) A Macro Analysis of Productivity Differences across Fields: Challenges in the Measurement of Scientific Publishing // Journal of the American Society for Information Science and Technology, vol. 64, no 2, pp. 307–320. Pislyakov V., Shukshina E. (2014) Measuring Excellence in Russia: Highly Cited Papers, Leading Institutions, Patterns of National and International Collaboration // Journal of the Association for Information Science and Technology, vol. 65, no 11, pp. 2321–2330. Turko T., Bakhturin G., Bagan V., Poloskov S., Gudym D. (2016) Influence of the Program «5–top 100» on the Publication Activity of Russian Universities // Scientometrics. Vol. 109. No 2. pp. 769–782</p></section></td></tr>
+                        <tr><td></td> <td>[Poster] Barney Walker (Imperial College London) <em class="toggle_abstract">Citation Gecko: A Tool for Literature Discovery and Exploration using Localised Citation Networks </em> <a href="presentations/Poster_Walker.pdf" target="_blank">[pdf]</a> <section class="closed">Citation Gecko is a new, open-source web app that gives researchers a birds-eye view of the relevant literature. Using openly-available citation data, it constructs and visualises the local citation network in the researcher’s area, helping them discover literature they may have missed and make sense of how papers are connected.Why is this so useful? Traditionally, the literature review process has involved iteratively searching keyword combinations and manually following references from one paper at a time. With this method it’s easy for important papers to slip through the net and is difficult to prioritise what to read first.How does it work? Gecko circumvents the need for researchers to define their area of interest in keywords by simply starting with a set of ‘seed papers’ which are representative of their area of interest. Gecko then finds all the papers that a) cite, b) are cited-by, or c) are co-cited with the seed papers in order to build a ‘localised’ citation network. Visualising this network gives researchers an overview of how the different papers fit together. Local, rather than global, metrics can then be defined on the network providing suggestions that are more likely to relevant to the researcher. New seed papers can then be added on-the-go from among the results, expanding the network and building up a more complete map of the literature. Citation Gecko is designed to fit with a researcher’s workflow, integrating with reference managers such as Zotero directly and allowing for upload of bibtex files, as well as providing native search functions. By demonstrating how having open citations can lead to greater discoverability of research articles we hope to incentivise more publishers to open up their citation data.</section></td></tr>
+                        <tr><td>19:30-22:00</td> <td>Social dinner</td></tr>
+                    </tbody>
+                </table>
+                <h3 class="subhead">Day 2 | Tuesday, September 4</h3>
+                <table class="programme">
+                    <tbody>
+                        <tr><td>9:00-9:30</td><td>Breakfast</td></tr>
+                        <tr><td>9:30-10:00</td><td>[Invited talk] Catriona MacCallum (Hindawi) <em class="toggle_abstract">Open Citations as Academic and Cultural Capital </em> <a href="presentations/D2S1_Catriona_McCallum.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=9L7BwiP5kB8&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=16&t=0s" target="_blank">[video]</a> <section class="closed">[TBA]</section></td></tr>
+                        <tr><td>10:00-10:30</td><td>[Invited talk from the organising committee] Zeyd Boukhers (EXCITE) <em class="toggle_abstract">A Generic Approach for Reference Extraction from PDF Documents </em> <a href="https://www.slideshare.net/ZeydBoukhers/a-generic-approach-for-reference-extraction-from-pdf-documents" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=LuW9Fbyu7S0&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=17&t=0s" target="_blank">[video]</a><section class="closed">Extracting and parsing cited references from publications in PDF format is important to ensure the acknowledgement of the sources of information. However, the mention of these sources differs from a community to another and from a publication to another. This citation diversity lies mainly in the indexation style (e.g., one or several reference sections), the existence of components (e.g. editor, source, URL, etc.) and the type of references (e.g. grey literature, academic literature, etc.). In order to automatically and accurately extract and parse difference kinds of references, EXCITE proposes a generic approach that combines Random Forest and Conditional Random Fields (CRF) in a coherent mechanism. Random Forest is employed for the initial classification of each line in the document, whereas CRF parses the potential reference lines into essential components (e.g., author, title, etc.). Here, different line combinations are iteratively assessed in order to obtain the proper combination with the help of a probabilistic approach.</section></td></tr>
+                        <tr><td>10:30-11:00</td><td>[Invited talk] Stephen Curry (DORA) <em class="toggle_abstract">The Declaration on Research Assessment (DORA): Opening up the measures of success </em> <a href="presentations/D2S3_Stephen_Curry.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=esYK9jVw9Jc&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=18&t=0s" target="_blank">[video]</a><section class="closed">In the 21st Century do we still know what it means to be a successful researcher? And where to find the border between academic freedom of inquiry and responsibility to funders – often ultimately taxpayers – who look to researcher to help tackle major societal challenges? Though many are attracted to research by the thrill of the intellectual challenge and the chance to make the world a better place, the increasing performance management of scientific and scholarly enquiry is straining the health of the system. Few would deny our responsibility not only to deliver discoveries, innovations and insights that are exciting and relevant, but also have to be mindful of the need to do so reliably; and to disseminate our findings (and our methods, data, and reagents) as rapidly and as widely as current technology permits. For now we are struggling to meet these demands, in part because the misuse of metrics such as impact factors, h-indices, and university rank in research assessment reinforces definitions of value that are at the same time too vague and too narrow. Initiatives such as DORA, especially when allied to the developing goals of open science, can help us restore the well-being of research assessment, of research – and of researchers.</section></td></tr>
+                        <tr><td>11:00-11:30</td><td>Coffee break</td></tr>
+                        <tr><td>11:30-12:00</td><td>[Invited talk] Diego Valerio Chialva (European Research Council) <em class="toggle_abstract">From Open Citation Data to Linked Open Data: a prototype at the ERC </em> <a href="presentations/D2S4_Diego_Chialva.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=L7JwzivVpio&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=19&t=0s" target="_blank">[video]</a><section class="closed">After briefly examining the advantages of open data and in particular open citation data for monitoring and evaluation of research and research funding, in this talk I discuss how the new relevant issue within an open data framework is linking data, in particular open citations to other open data. I will then present the work I and Mr Alexis-Michel Mugabushaka have being doing in the Unit A1 at ERCEA, in collaboration and open discussion with other external interested and research groups, in prototyping an open research graph, modelling specific relevant new data ontologies, constructing the graph itself, and in using it for analysis.</section></td></tr>
+
+                        <tr><td>12:00-12:15</td> <td>[Selected talk] Sergey Parinov (RANEPA) <em class="toggle_abstract">Open citation content data </em> <a href="presentations/D2S5_Sergey_Parinov.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=tUqPI_qcxI0&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=20&t=0s" target="_blank">[video]</a> <section class="closed">The project CyrCitEc (<a href="https://github.com/citeccyr">https://github.com/citeccyr</a>) creates a source of open citation content data. It is funded by the Russian Presidential Academy of National Economy and Public Ad-ministration (RANEPA, <a href="http://www.ranepa.ru/eng/">http://www.ranepa.ru/eng/</a>). The project has two main aims: 1) to create a public service for processing available research papers full text (particularly, in PDF and with main focus on Social Sciences), in order to build and regularly update an open dataset of citation relationships and citations content; 2) to use the citation content data for developing methods of qualitative citation analysis, which can be used for improving of current practice of a research performance assessment. The project tends to provide a pilot version of open scholarly infrastructure  based on following pillars:1.Open distributed architecture. It means providing a concept, open source software and an initial core infrastructure for interoperable systems, which are processing citation relationships and its content from research papers’ full text. 2. Two initial nodes of this core infrastructure, presented by interacting CitEc (<a href="http://citec.repec.org/">http://citec.repec.org/</a>) and CyrCitEc systems. Currently these nodes are ex-changing by citations data. The nodes have a specialization on processing papers in specific languages: Romano-Germanic languages by CitEc and Russian by CyrCitEc. Other nodes, e.g. specialized on processing citation data in languages, like Chinese, Japanese, Arabic, etc., can be added by the same way. There is also an intention to integrate data about references into the OpenCitations Corpus (<a href="http://opencitations.net/">http://opencitations.net/</a>).3. Transparency. It allows publishers, authors and readers of papers to see for each paper how their citation data are extracted by the system and to trace why some papers' references / in-text citations are not processed or not counted.4. Better representation and usability of citation data by its deeper integration with a digital library tools and services. 5. Enrichment facilities. The system provides tools for authors of papers to enter additional data to correct errors of processing citations from their papers and to enrich their citation relationships, e.g. by qualitative characteristics of their motivation for citing papers of other authors, etc.6. Public control. Readers of papers can see how authors used enrichment facilities to increase their number of citations. Public will be able to react on wrong authors behaviour. CyrCitEc takes papers’ metadata from the Socionet digital library (https://socionet.ru/), which also includes a full set of metadata from RePEc (<a href="http://repec.org">http://repec.org</a>).</section></td></tr>
+
+
+                        <tr><td>12:15-12:30</td> <td>[Selected talk] Daniel Ecer (eLife Sciences) <em class="toggle_abstract">Citation Sentiment </em> <a href="https://www.slideshare.net/DanielEcer/citation-sentiment/DanielEcer/citation-sentiment" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=RC2zrU2gGZA&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=21&t=0s" target="_blank">[video]</a> <section class="closed">Not all citations are equal. Some citations are positive, while others may actually criticise the referenced work. In this talk we are presenting results of a project to analyse the sentiment of citations, the challenges in getting training data and why out-of-the box models trained on Twitter may not provide the same results for the subtle language used in scientific manuscripts.</section></td></tr>
+
+
+                        <tr><td>12:30-12:45</td> <td>[Selected talk] Colin Batchelor (Royal Society of Chemistry) <em class="toggle_abstract">The Cambridge Metrics Group and article-level-metrics </em> <a href="presentations/D2S7_Colin_Batchelor.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=6Gqh2Fz8oyU&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=22&t=0s" target="_blank">[video]</a> <section class="closed">In this talk we present a consortium-led case study on article-level metrics with a focus on their scientific usefulness and statistical validity. The consortium consists of a number of non-profit organisations involved with academic publishing, originally drawn from the Cambridge (UK) area. The consortium meets regularly to discuss data science issues associated with publishing including topics as diverse as identifying usage patterns, gender bias, user experience and data repositories, and article level metrics. A subset of these members (Cambridge University Press, the Royal Society of Chemistry, PLoS, eLife and The Company of Biologists) decided to share data so that an analysis of the scientific validity could be undertaken. To attempt to ascertain scientific validity we looked at a multitude of measures used commonly used a variety of statistical methods to group them into sets of distinct factors. The results of the factor analysis where sets of metrics which measured different aspects of a papers impact. We found that while these patterns of impact are different across different publishers, there are clear commonalities in which metrics fall together. To identify the usefulness of these different sets of metrics we then aligned them with the measures identified through the snowball initiative. In this way, we have started to identify high-level metrics that are statistically distinct, in that they measure different phenomena, and are useful in that they are similar to measures independently proposed by a consortium of universities. We present the latest results from this ongoing project.</section></td></tr>
+
+
+                        <tr><td>12:45-14:00</td><td>Lunch</td></tr>
+
+                        <tr><td>14:00-14:15</td> <td>[Selected talk] Nees Jan van Eck (Centre for Science and Technology Studies, Leiden University) <em class="toggle_abstract">Visualizing science based on open data sources </em> <a href="https://www.slideshare.net/NeesJanvanEck/visualizing-science-based-on-open-data-sources-112941728" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=2DG-g46lG14&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=23&t=0s" target="_blank">[video]</a> <section class="closed">I will demonstrate the use of the VOSviewer software (www.vosviewer.com), of which I am one of the developers, for creating bibliometric visualizations of science based on openly available bibliographic data sources. Both the use of Crossref data and the use of data from the OpenCitations Corpus will be demonstrated. In addition, I will show how data from Dimensions can be used. The possibilities and limitations of the currently available open data sources will be discussed, also in comparison with more established data sources such as Web of Science and Scopus. Finally, I will provide my perspective on future developments, focusing especially on the integration of open data sources and visual analysis tools.</section></td></tr>
+
+                        <tr><td>14:15-14:30</td> <td>[Selected talk] Nataliia Kaliuzhna (Independent researcher) <em class="toggle_abstract">ScientoMiner ICR - the Gephi plugin for importing scholarly citations data from Crossref services </em> <a href="presentations/D2S9_Nataliia_Kaliuzhna.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=SrZvYHI9Ds4&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=24&t=0s" target="_blank">[video]</a> <section class="closed">The  author presents the sources of problems with conducting of bibliometric research using citation data analysis and points out that the more and more widespread use of the DOI identification system and the growing number of publishing references of articles by individual publishers result in new opportunities for such research. Particularly noteworthy here are CrossRef and Opencitations services that share structured bibliographic information (including citations) for all interested researchers. The author shows functionality of the new developed plugin (ScientoMiner ICR) for the Gephi analytical platform that imports data describing citations from CrossRef services. This enables citation analysis for all parties interested in this source of research data. The capabilities of this module will be presented on the basis of an analysis of citations from selected Ukrainian journals. (Anna Kaminska,  Serhii Nazarovets, Nataliia Kaliuzhna)</section></td></tr>
+
+                        <tr><td>14:30-14:45</td> <td>[Selected talk] Finn Årup Nielsen (Technical University of Denmark) <em class="toggle_abstract">Scholia as of September 2018 </em> <a href="http://www2.compute.dtu.dk/pubdb/views/edoc_download.php/7116/pdf/imm7116.pdf" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=Kz92P1gcijc&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=25&t=0s" target="_blank">[video]</a> <section class="closed">Scholia is a website that visualize scientific information from Wikidata using the SPARQL-based Wikidata Query Service. Scholia shows profiles, e.g., for researchers, organizations, countries, publishers, events, awards and topics including chemicals with tables and visualizations. Scholia can be used for researcher profiles, research analytics, bibliographic reference management with the LaTeX as well as discovery of new research. We continuously expand the functionality of Scholia. I will give an update of the current state of Scholia.</section></td></tr>
+
+                        <tr><td>14:45-15:00</td> <td>[Selected talk] Daniel Mietchen (Data Science Institute, University of Virginia) <em class="toggle_abstract">A guided tour through citation networks around public health emergencies </em> <a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_Wikidata_for_research/Talks/Workshop_on_Open_Citations_2018" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=ThN9sVJzNu0&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=26&t=0s" target="_blank">[video]</a> <section class="closed">Citation networks provide a way to explore how knowledge spreads. In the context of public health emergencies, the timeliness of this spreading is of special concern. In this talk, I will explore citation networks around public health emergencies and highlight how they change on the time scale of specific emergencies like the Ebola or Zika virus outbreaks.</section></td></tr>
+                        
+
+                        <tr><td>15:00-15:30</td><td>[Invited talk from the organising committee] Silvio Peroni (OpenCitations) <em class="toggle_abstract">The OpenCitations Corpus, its data and its interfaces: present status and future plans </em> <a href="https://docs.google.com/presentation/d/1mybQmjhFY6kLtTE1TdONaxsl0nSjmRGOSCnFMTwfzWQ/edit?usp=sharing" target="_blank">[slides]</a> <a href="https://www.youtube.com/watch?v=cjQ9Q3ISGYs&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=27&t=0s" target="_blank">[video]</a><section class="closed">no spoilers</section></td></tr>
+                        <tr><td>15:30-16:00</td><td>Coffee break</td></tr>
+                        <tr><td>16:00-16:50</td><td>Round table</td></tr>
+                        <tr><td>16:50-17:05</td><td>Workshop closing by David Shotton <a href="https://www.youtube.com/watch?v=jklzUddiljU&list=PLaUmBQ7P5K-Ad-kZteHMl_cOImX1I8_9E&index=28&t=0s" target="_blank">[video]</a></td></tr>
+                        <tr><td>17:10-19:10</td><td>Sightseeing tour</td></tr>
+                    </tbody>
+                </table>
+                <h3 class="subhead">Day 3 (Hack day) | Wednesday, September 5</h3>
+                <table class="programme">
+                    <tbody>
+                        <tr><td>9:00-9:30</td><td>Breakfast</td></tr>
+                        <tr><td>9:30-09:45</td><td>Welcome and introductions</td></tr>
+                        <tr><td>9:45-10:30</td><td>Presenting API and data</td></tr>
+                        <tr><td>10:30-11:00</td><td>Pitching projects and ideas</td></tr>
+                        <tr><td>11:00-11:20</td><td>Coffee break</td></tr>
+                        <tr><td>11:20-11:30</td><td>Formation of working groups</td></tr>
+                        <tr><td>11:30-13:00</td><td>Hack session 1</td></tr>
+                        <tr><td>13:00-14:00</td><td>Lunch</td></tr>
+                        <tr><td>14:00-16:00</td><td>Hack session 2</td></tr>
+                        <tr><td>16:00-16:20</td><td>Coffee break</td></tr>
+                        <tr><td>16:20-17:20</td><td>Show and Tell</td></tr>
+                        <tr><td>17:20-17:30</td><td>Closing 3rd day</td></tr>
+                    </tbody>
+                </table>
+                
             </div>
 
         </div>
-
-    </div>
-
-    <!--speakers_end-->
-
-
-    <!-- organisers_start -->
-    <div class="speakers_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="serction_title_large mb-95">
-                        <h3>
-                            Organizers
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-3">
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="img/speakers/david.jpg" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                    <a target="_blank" href="https://twitter.com/dshotton"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>David Shotton</h3>
-                            <p>University of Oxford</p>
-                            <p>OpenCitations</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="offset-md-1 col-md-3">
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="img/speakers/silvio.png" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                    <a target="_blank" href="https://twitter.com/essepuntato"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Silvio Peroni</h3>
-                            <p>University of Bologna</p>
-                            <p>OpenCitations</p>
-                        </div>
-                    </div>
-               </div>
-
-               <div class="offset-md-1 col-md-3">
-                     <div class="single_speaker">
-                         <div class="speaker_thumb">
-                             <img src="img/speakers/chiara.jpg" alt="">
-                             <div class="hover_overlay">
-                                 <div class="social_icon">
-                                     <a href="https://twitter.com/ChiaraDiGiamba5"><i class="fa fa-twitter"></i></a>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="speaker_name text-center">
-                             <h3>Chiara Di Giambattista</h3>
-                             <p>Research fellow at the University of Bologna, Communications Directir and Commmunity Development Manager of OpenCitations</p>
-                         </div>
-                     </div>
-              </div>
-          </div>
-
-          <div class="row">
-                <div class="col-md-3">
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="img/speakers/ludo.jpg" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                    <a target="_blank" href="https://twitter.com/LudoWaltman"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Ludo Waltman</h3>
-                            <p>Centre for Science and Technology Studies (CWTS), Leiden University</p>
-                            <p>VOSViewer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="offset-md-1 col-md-3">
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="img/speakers/philippmayr.jpg" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                    <a target="_blank" href="https://twitter.com/Philipp_Mayr"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Philipp Mayr</h3>
-                            <p>GESIS – Leibniz-Institute for the Social Sciences</p>
-                            <p>EXCite</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="offset-md-1 col-md-3">
-
-                  <div class="single_speaker">
-                      <div class="speaker_thumb">
-                          <img src="img/speakers/giovanni.jpg" alt="">
-                          <div class="hover_overlay">
-                              <div class="social_icon">
-                                  <a target="_blank" href="https://twitter.com/giovanni1085"><i class="fa fa-twitter"></i></a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="speaker_name text-center">
-                          <h3>Giovanni Colavizza</h3>
-                          <p>University of Amsterdam</p>
-                          <p>ScholarIndex</p>
-                      </div>
-                  </div>
-
-                </div>
-
-            </div>
-
-            <div class="row">
-                  <div class="col-md-3">
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="img/speakers/matteo.png" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                    <a target="_blank" href="https://twitter.com/mr56k"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Matteo Romanello</h3>
-                            <p>Swiss Federal Institute of Technology in Lausanne</p>
-                            <p>ScholarIndex</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- organisers_end-->
-
-    <!-- brand_area_start-->
-    <div class="brand_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="brand_active owl-carousel">
-                        <div class="single_brand text-center">
-                            <a target="_blank" href="https://openscholarlymetadata.org/"><img src="img/barnd/recosm.png" alt="research centre on scholarly metadata unibo"></a>
-                        </div>
-                        <div class="single_brand text-center">
-                            <a target="_blank" href="http://opencitations.net/"><img src="img/barnd/opencitations.png" alt="opencitations"></a>
-                        </div>
-                        <div class="single_brand text-center">
-                            <a target="_blank" href="https://www.vosviewer.com/"><img src="img/barnd/vos.png" alt="dharc unibo"></a>
-                        </div>
-                        <div class="single_brand text-center">
-                            <a target="_blank" href="https://scholarindex.eu/"><img src="img/barnd/scholar.png" alt="scholar index"></a>
-                        </div>
-                        <div class="single_brand text-center">
-                            <a target="_blank" href="http://excite.west.uni-koblenz.de/excite"><img src="img/barnd/excite.png" alt="excite"></a>
-                        </div>
-
-                        <div class="single_brand text-center">
-                            <a target="_blank" href="https://ficlit.unibo.it/it"><img src="img/barnd/ficlit.png" alt="ficlit unibo"></a>
-                        </div>
-                        <div class="single_brand text-center">
-                            <a target="_blank" href="https://centri.unibo.it/dharc/en"><img src="img/barnd/dharc.png" alt="dharc unibo"></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- brand_area_end -->
-
-
-    <!-- event_area_start -->
-    <div class="event_area">
-        <div class="container" id="program">
-          <div class="row">
-              <div class="col-xl-12">
-                  <div class="serction_title_large mb-95">
-                      <h3>
-                          Program
-                      </h3>
-                  </div>
-              </div>
-          </div>
-            <div class="">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3">
-                        <div class="date">
-                            <h3>Introduction</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-9 col-lg-9">
-                        <div class="single_speaker">
-                            <img style="width: 100px" src="img/speakers/silvio_r.png" alt="">
-                            <div class="speaker-name">
-                                <div class="heading d-flex justify-content-between align-items-center">
-                                    <span>Silvio Peroni</span>
-                                    <div class="time">
-                                        15.20-15.30
-                                    </div>
-                                </div>
-                                <p>Workshop Introduction and authors' contribution acknowledgement</p>
-                                <ul id="authors_contrib">
-                                  <li>Zeyd Boukhers (Fraunhofer FIT, Germany). <em>Evaluation Scheme of FAIRness in Scholarly Data.</em> [<a target="_blank" href="https://youtu.be/NwXkYl0fRdc">video</a>]</li>
-                                  <li>Fabian Beck (University of Bamberg). <em>Assessing Discussions of Related Work through Citation-based Recommendations and Network Visualization.</em> [<a target="_blank" href="https://youtu.be/QfocW8CaFbo">video</a>]</li>
-                                  <li>David Pride and Petr Knoth (KMi, The Open University). <em>Enriching open citation metadata with citation type classification.</em> [<a target="_blank" href="https://youtu.be/3Pjy8qCnGTQ">video</a>]</li>
-                                  <li>Muhammad Ahsan Shahid (GESIS). <em>OUTCITE - An integrated platform for comparing reference extraction toolkits and provisioning their output.</em> [<a target="_blank" href="https://vimeo.com/756759193">video</a>]</li>
-                                  <li>Eric Schares (Iowa State University). <em>Exploring a University’s Cited Reference Patterns with OpenAlex.</em> [<a target="_blank" href="https://youtu.be/ftTlXAD-wYo">video</a>]</li>
-                                  <li>George Macgregor (University of Strathclyde). <em>Enhancing discovery and enriching the scholarly graph with the Research Outputs Metadata Schema (Rioxx).</em> [<a target="_blank" href="https://www.youtube.com/watch?v=y5cTyYBXAjA">video</a>]</li>
-                                  <!--<li>Petr Knoth (CORE, Knowledge Media institute, The Open University). <em>Experiences and challenges in sustaining open science infrastructures: the CORE case.</em> [<a>video</a>]</li>-->
-                                  <li>Dominika Tkaczyk (Crossref). <em>Things you wish you didn’t have to know about metadata matching.</em> [<a target="_blank" href="https://www.youtube.com/watch?v=gyOx0sa7FRg">video</a>]</li>
-                                  <li>Leyla Jael Castro (ZB MED Information Centre for Life Sciences; NFDI4DataScience consortium), Zeyd Boukhers (NFDI4DataScience consortium), Olga Giraldo (ZB MED Information Centre for Life Sciences; NFDI4DataScience consortium), Adamantios Koumpis (Institute for Medical Informatics, University of Cologne; NFDI4DataScience consortium), Oya Beyan (Institute for Medical Informatics, University of Cologne; NFDI4DataScience consortium), Dietrich Rebholz-Schuhmann (ZB MED Information Centre for Life Sciences; Institute for Medical Informatics, University of Cologne).<em> NFDI4DataScience registry for reproducible Data Science and Artificial Intelligence.</em> [<a target="_blank" href="https://www.youtube.com/watch?v=Too-OQ6jSfk">video</a>]</li>
-                                  <li>Kim Fidomski (Fraunhofer Institute for Applied Information Technology FIT). <em>It is time for a distributed architecture for scholarly data management.</em> [<a target="_blank" href="https://youtu.be/2b8ZrrKubmc">video</a>]</li>
-                                  <li>Bianca Kramer (Sesame Open Science), Hans de Jonge (Dutch Research Council - NWO). <em>The availability of completeness of open funder metadata.</em> [<a target="_blank" href="https://youtu.be/PWCvd8XaWpk">video</a>]</li>
-                                </ul>
-                                <br>
-                                <p>Authors contributions’ abstracts and slide presentations can be found on the <a target="_blank" href="https://zenodo.org/communities/wooc2022/">WOOC2022 Zenodo Community.</a></p>
-                            </div>
-                        </div>
-                   </div>
-                </div>
-            </div>
-
-            <div class="double_line row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h3>Session I</h3>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <!--
-                    <div class="single_speaker">
-                        <img style="width: 100px" src="img/speakers/victoria_r.png" alt="">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Victoria Moody</span>
-                                <div class="time">
-                                    15.10-15.30
-                                </div>
-                            </div>
-                            <h4>Lift, shift and re-use: Repurposing open access in new ways: The possibility (and probable necessity) of ensuring the capability and sustainability of research infrastructure assets through the enhanced deployment of open science approaches, creating new pathways for established approaches and extending their impact</h4>
-                            <p>In a time of increasing pressures on researchers, resources and a need to reduce the bureaucracy which draws attention away from a focus on excellent, impactful research, what are some of the emerging areas of challenge and opportunity for open science in the area of ensuring the capability and sustainability of research infrastructure assets?
-                            </p><p>What principles might be of benefit and which approaches will need to be advanced from established open access pathways and implemented in new ways to optimise and balance a complex landscape in a time of accelerating technology development and rapid growth in commercial supplier partnerships? Building on excellent practice across the international research landscape, what might be the optimal strategic approach and portfolio of policies, tools and services needed to support this optimisation?</p><p>Focusing on the foundational research assets of software, hardware, code, machines, management data and policy, this session will offer an infrastructure perspective of the opportunities and imperatives for replicating established routes to open science in new ways. It will outline an ambition for ‘dimensionally ethical’ research, drawing on excellent practice in train and offering a few perspectives to reflect on for further consideration. 
-                            </p>
-                        </div>
-                    </div>
-                    -->
-
-                    <div class="single_speaker">
-                        <img style="width: 100px" src="img/speakers/alberto_martin_r.png" alt="">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Alberto Martín-Martín</span>
-                                <div class="time">
-                                    15.30-15.50
-                                </div>
-                            </div>
-                            <h4>Managing the scholarly record</h4>
-                            <p>Scholarly articles, books, reports, data, code... these and other scholarly outputs are sometimes collectively referred to as the "scholarly record". Although this term is not as widely used as "scholarly publication" or "scholarly literature", it is quite fitting, because this content and its associated metadata are not just "public" information assets, they are in fact the main documentary evidence of the scholarly activities that take place across the globe in different scholarly institutions. Furthermore, like any other organization that generates documents as a result of its own activity, the global scholarly enterprise needs suitable access to past records to support future research activities, as well as to evaluate and improve the scholarly ecosystem itself. Thus, an effective handling of these records is essential for the adequate running of the system. In practice, however, elements of the so-called scholarly record are seldom treated as such. Instead, both content and metadata derived from scholarly activities are often commoditised, leading to barriers in accessing, contributing to, and/or reusing the scholarly record. In this talk I will argue that the principles of records management, a field which has seldom had ties to scholarly communication, can be useful in the current process of digital transformation that the scholarly ecosystem is undergoing. In fact, some initiatives such as the FAIR principles, and several declarations in favor of scholar-led publishing could be seen as sharing many characteristics with this framework.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h3>Session II</h3>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <div class="single_speaker">
-                        <img style="width: 100px" src="img/speakers/ludo_r.png" alt="">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Ludo Waltman</span>
-                                <div class="time">
-                                    15.50-16.10
-                                </div>
-                            </div>
-                            <h4>Let’s move beyond citations!</h4>
-                            <p>Major progress has been made in achieving full openness of all citations. This is a hugely impressive milestone. However, it is not enough. We do not just need citations to be open, we need all publication metadata to be open. In this talk I will discuss why this is so important and will provide an up-to-date overview of the state of open metadata. I will reflect on different ways in which openness of metadata can be realized and will argue that we need authoritative sources of open metadata.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="single_speaker">
-                        <img style="width: 100px" src="img/speakers/claudio_r.png" alt="">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Claudio Aspesi</span>
-                                <div class="time">
-                                    16.10-16.30
-                                </div>
-                            </div>
-                            <h4>Fixing scholarly communications may require moving beyond citations</h4>
-                            <p>Citations have become a common metric to assess research. However, scholarly communications will continue to evolve, as the transition to digital distribution will enable new tools and models and as academic leaders grapple with redefining approaches to academic reward and promotion.  Citations may evolve (as data analytics will allow to perform increasingly sophisticated analysis) or may become irrelevant (for example, in the construct of the "record of versions", contributions to intellectual advancement may become much more important). It took 215 years between the printing of the Gutenberg Bible and the launch of the first scholarly journal, so it is important to be humble about the future, avoid prescriptive straitjackets and encourage experimentation.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="double_line row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h4>5 min break</h4>
-                    </div>
-                </div>
-              </div>
-
-
-            <div class="row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h3>Session III</h3>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <div class="single_speaker">
-                        <img style="width: 100px" src="img/speakers/jennifer_lin_ana_r.png" alt="">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Jennifer Lin and Ana-Maria Istrate</span>
-                                <div class="time">
-                                    16.35-16.55
-                                </div>
-                            </div>
-                            <h4>Essential frontiers: open data & software citations, an automated ML approach</h4>
-                            <p>Science is progressive, and every discovery, set of data, and publication builds on previous work. Today, it's impossible to put every new development in the context of what's gone before. Comprehensive open citations can both enable the attribution of scientific progress as well as the evaluation of research and its impacts. For citations to live up to its promise as a vehicle for the discovery, dissemination, and evaluation of all scholarly knowledge, the open citation frontier needs to expand beyond traditional bibliographic metadata into other essential scientific resources such as research data and software. We describe a new open corpus of dataset and software mentions in biomedical papers created by applying machine learning to full text biomedical literature. We share the process of extraction and transformation of mentions into citations, as well as opportunities and challenges that come with disambiguating and linking the mentions in an open dataset of this size.</p>
-                        </div>
-                    </div>
-
-                    <div class="single_speaker">
-                        <img src="img/speakers/philipp_r.png" alt="">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Philipp Mayr</span>
-                                <div class="time">
-                                    16.55-17.15
-                                </div>
-                            </div>
-                            <h4>Handling Non-source items in the project OUTCITE</h4>
-                            <p>In this invited talk, we will detail the computational processes we develop in the project OUTCITE, to reduce the amount of non-source items (NCI) in our Social Science article collection. First, we present a detailed analysis of the composition of NCI in our corpus. Then, we describe approaches to match against our own and external bibliographic indices. In the end, we elaborate on novel resolving strategies involving the Bing Websearch API that we apply to NCI which are in particular hard to match. </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="double_line row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h3>Session IV</h3>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <div class="single_speaker">
-                        <img style="width: 100px" src="img/speakers/chiara_r.png" alt="">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Chiara Di Giambattista</span>
-                                <div class="time">
-                                    17.15-17.35
-                                </div>
-                            </div>
-                            <h4>Where were we? The role of the community in the present and future of OpenCitations</h4>
-                            <p>OpenCitations is a community-based open infrastructure organization for open scholarship dedicated to the publication of open bibliographic and citation data by the use of Semantic Web (Linked Data) technologies. Since its foundation in 2010, OpenCitations exists for the people that use its data for research purposes every day, and thanks to the support received from the global scholarly community. With its valid services and numerous ongoing activities, OpenCitations has quickly become a well-acknowledged infrastructure that perfectly fits into the current Open Science environment. The collaboration with international networks and projects has made it possible for OpenCitations to expand its team and accomplish significant milestones. However, more activities are planned for the future, and the involvement of the community is crucial to help in this process. In this talk, I will provide an overview of OpenCitations’ recent developments, plans and of how the community can embrace OpenCitations' mission.</p>
-                        </div>
-                    </div>
-
-                    <div class="single_speaker">
-                        <img style="width: 100px" src="img/speakers/chodacki_r.png" alt="">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>John Chodacki</span>
-                                <div class="time">
-                                    17.35-17.55
-                                </div>
-                            </div>
-                            <h4>Make Data Count: The State of Open Data Citations</h4>
-                            <p></p>
-                        </div>
-                    </div>
-
-                    <div class="single_speaker">
-                        <img style="width: 100px" src="img/speakers/david_r.png" alt="">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>David Shotton</span>
-                                <div class="time">
-                                    17.55-18.00
-                                </div>
-                            </div>
-                            <h4>Roundup discussion and conclusion</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- event_area_end -->
-
-
-
-
-
-
-    <!-- announcement start
-    <div class="container" id="cfp">
-      <div class="row">
-          <div class="col-xl-12">
-              <div class="serction_title_large mb-95">
-                  <h3>
-                      News
-                  </h3>
-              </div>
-          </div>
-      </div> -->
-      <!--
-        <div class="row">
-            <div class="col-lg-8 mb-5 mb-lg-0">
-                <div class="blog_left_sidebar">
-                    <article class="blog_item">
-                        <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="img/banner/webinar.jpg" alt="">
-                            <a href="#" class="blog_item_date">
-                                <h3>7</h3>
-                                <p>Jul</p>
-                            </a>
-                        </div>
-
-                        <div class="blog_details">
-                            <h2>9 September 2020, 15:00 - 18:00 CEST. WOOC 2020 online event</h2>
-                            <p>Due to the COVID-19 international situation, WOOC 2020 will be an online event. We are working on a 3-hour Webinar where our invited speakers will present their work (some of those are listed below, but more have to come!), and participants can engage in Q&A.
-                              Moreover, participants are warmly invited to submit their own contributions!</p>
-                            <ul class="blog-info-link">
-                                <li><a href="#submit_abstract"><i class="fa fa-comments"></i>Read more about the submission</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
-              </div>
-            </div>
-        </div>
-    </div>
-    -->
-    <!-- announcement end -->
-
-    <!-- announcement start
-    <div class="container" id="covid">
-        <div class="row">
-            <div class="col-lg-8 mb-5 mb-lg-0">
-                <div class="blog_left_sidebar">
-                    <article class="blog_item">
-                        <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="img/banner/portico.jpg" alt="">
-                            <a href="#" class="blog_item_date">
-                                <h3>2</h3>
-                                <p>Apr</p>
-                            </a>
-                        </div>
-
-                        <div class="blog_details">
-                            <h2>Covid-19 Outbreak</h2>
-                            <p>Considering current situation about COVID-19, the organising committee thinks
-                              it is wise not to have the <em>Workshop on Open Citations and Open Scholarly Metadata</em> as planned.
-                              While we decided to postpone the Workshop to the next year (2021),
-                              we are currently working on a one-day remote event.</p>
-                            <ul class="blog-info-link">
-                                <li><a href="https://twitter.com/workshop_oc"><i class="fa fa-comments"></i>We will keep you posted on twitter</a></li>
-                            </ul>
-                        </div>
-                    </article>
-
-              </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    announcement end -->
-
-
-    <!-- travel start -->
-    <!-- <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-6 col-md-6">
-                <div class="about_thumb">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.901743426365!2d11.34925761552535!3d44.496680079101495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4bb9919533f%3A0x28bbdd19297b033a!2sVia+Zamboni%2C+34%2C+40126+Bologna+BO!5e0!3m2!1sen!2sit!4v1534016448032" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-xl-5 offset-xl-1 col-md-6">
-                <div class="about_info">
-                    <div class="section_title">
-                        <span class="sub_heading">travel information</span>
-                        <h3>Welcome <br>
-                        to Bologna!</h3>
-                    </div>
-                    <p>The University of Bologna is the oldest university in the western world,
-                      and one of the largest universities in Italy (with about 90,000 enrolled students). </p>
-
-                  </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- sessions start -->
-    <!-- <div class="whole-wrap">
-      <div class="container box_1170">
-        <div class="section-top-border">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="single-defination">
-                <h4 class="mb-20">Get to Bologna </h4>
-                <p>The airport “Guglielmo Marconi” is located at 15-20 minutes by car from the city centre.
-                  Getting to the centre by taxi costs about 15-20€ (to book a taxi in advance call 0039 051 372727).
-                  <a href="https://www.marconiexpress.it/en/">Marconi express</a> trains (fare 8,70EUR),
-                  and <a href="https://aerobus.bo.it/en">BLQ</a> direct bus (fare 6EUR) leave regularly
-                  from the Airport for Bologna Central Rail Station.</p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="single-defination">
-                <h4 class="mb-20">The venue</h4>
-                <p>The workshop will take place at the University of Bologna in the heart of the city,
-                  in <i>via Zamboni 34, Room "Aula Affreschi"</i> .
-                  From the train station you can either walk (20') or take <i>bus C</i> (direction "Cestello").</p>
-
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="single-defination">
-                <h4 class="mb-20">Accommodation</h4>
-                <p>The organizers are negotiating with local hotels for rooms to be reserved and made available at special rates for participants.</p>
-
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="single-defination">
-                <h4 class="mb-20">About the location</h4>
-                <p><a href="https://youtu.be/ObBreSoNzZY">Bologna</a> is home to numerous prestigious cultural, economic and political institutions as well as one of the most impressive trade fair districts in Europe. In 2000 it was declared European capital of culture, and in 2006, a UNESCO "city of music".
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- sessions end-->
-
-    <!-- travel end -->
-
-
-
-    <!-- faq_area_Start -->
-    <!-- <div class="faq_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="serction_title_large mb-95">
-                        <h3>
-                            Frequently Ask
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-
-                                        <img src="img/barnd/info.png" alt=""> Is WordPress hosting worth it?
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion"
-                                style="">
-                                <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        <img src="img/barnd/info.png" alt="">What are the advantages <span>of WordPress
-                                            hosting over shared?</span>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <img src="img/barnd/info.png" alt=""> Where the Venue?
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="heading_4">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
-                                        <img src="img/barnd/info.png" alt=""> How can I attend <span>the Event from
-                                            Asia?</span>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion"
-                                style="">
-                                <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
     -->
 
-    <!-- faq_area_end -->
 
-    <!-- footer_start -->
-    <footer class="footer footer_bg_1">
-        <!-- <div class="circle_ball d-none d-lg-block">
-            <img src="img/banner/footer_ball.png" alt="">
-        </div> -->
-            <div class="footer_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-4 col-lg-4">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                        Follow Us
-                                </h3>
-                                <ul>
-                                  <li><a target="_blank" href="https://twitter.com/workshop_oc">Twitter</a></li>
+    <!-- organisers
+    ================================================== -->
+    <section id="organisers" class="s-about">
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1 display-1--light">Our organisers</h1>
+            </div>
+        </div> <!-- end section-header -->
+        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+            <div class="col-block">
+                <img class="circle-img" src="images/speakers/david.jpg" alt="">
+                <h5>David Shotton</h5>
+                <div><span class="testimonials__pos">OpenCitations | University of Oxford</span></div>
+                <div><a href="https://twitter.com/dshotton">@dshotton</a></div>
+            </div>
+            <div class="col-block">
+                <img class="circle-img" src="images/speakers/silvio.png" alt="">
+                <h5>Silvio Peroni</h5>
+                <span class="testimonials__pos">OpenCitations | University of Bologna</span>
+                <div><a href="https://twitter.com/essepuntato">@essepuntato</a></div>
+            </div>
+            <div class="col-block">
+                <img class="circle-img" src="images/speakers/chiara.jpg" alt="">
+                <h5>Chiara Di Giambattista</h5>
+                <span class="testimonials__pos">OpenCitations | University of Bologna</span>
+                <div><a href="https://twitter.com/ChiaraDiGiamba5">@ChiaraDiGiamba5</a></div>
+            </div>
+            <div class="col-block">
+                <img class="circle-img" src="images/speakers/heibi.jpg" alt="">
+                <h5>Ivan Heibi</h5>
+                <span class="testimonials__pos">OpenCitations | University of Bologna</span>
+                <div><a href="https://twitter.com/ivanheib">@ivanheib</a></div>
+            </div>
+            <div class="col-block">
+                <img class="circle-img" src="images/speakers/ludo.jpg" alt="">
+                <h5>Ludo Waltman</h5>
+                <span class="testimonials__pos">VOSViewer | Centre for Science and Technology Studies (CWTS), Leiden University</span>
+                <div><a href="https://twitter.com/LudoWaltman">@LudoWaltman</a></div>
+            </div>
+            <div class="col-block">
+                <img class="circle-img" src="images/speakers/philippmayr.jpg" alt="">
+                <h5>Philipp Mayr</h5>
+                <span class="testimonials__pos">EXCITE | GESIS - Leibniz Institute for the Social Sciences</span>
+                <div><a href="https://twitter.com/Philipp_Mayr">@Philipp_Mayr</a></div>
+            </div>
+            <div class="col-block">
+                <img class="circle-img" src="images/speakers/giovanni.jpg" alt="">
+                <h5>Giovanni Colavizza</h5>
+                <span class="testimonials__pos">ScholarIndex | University of Amsterdam</span>
+                <div><a href="https://twitter.com/giovanni1085">@giovanni1085</a></div>
+            </div>
+            <div class="col-block">
+                <img class="circle-img" src="images/speakers/matteo.png" alt="">
+                <h5>Matteo Romanello</h5>
+                <span class="testimonials__pos">ScholarIndex | Swiss Federal Institute of Technology in Lausanne</span>
+                <div><a href="https://twitter.com/mr56k">@mr56k</a></div>
+            </div>
+        
+        </div>
+    </section>
+    
+    <!-- organisers' projects -->
+    <section class="s-clients">      
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="clients">
+                    <!--<a href="#" title="" class="clients__slide"></a>-->
+                    <a href="https://openscholarlymetadata.org/" title="" class="clients__slide"><img src="images/brand/recosm.png" alt="research centre on scholarly metadata unibo" /></a>
+                    <a href="http://opencitations.net" title="" class="clients__slide"><img src="images/brand/opencitations.png" /></a>
+                    <a href="https://www.vosviewer.com/" title="" class="clients__slide"><img src="images/brand/vos.png" alt="dharc unibo" /></a>
+                    <a href="https://scholarindex.eu/" title="" class="clients__slide"><img src="images/brand/scholar.png" alt="scholar index" /></a>
+                    <a href="http://west.uni-koblenz.de/en/research/excite" title="" class="clients__slide"><img src="images/brand/excite.png" /></a>
+                    <a href="https://centri.unibo.it/dharc/en" title="" class="clients__slide"><img src="images/brand/dharc.png" alt="dharc unibo" /></a>
+                    <a href="http://www.ficlit.unibo.it/en" title="" class="clients__slide"><img src="images/brand/ficlit.png" /></a>
+                </div> <!-- end clients -->
+            </div> <!-- end col-full -->
+        </div> <!-- end clients-outer -->
+    </section> <!-- end s-clients -->
+ 
 
-                                </ul>
+    <!-- sponsors
+    ================================================== 
+    <section id='sponsors' class="s-services">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-2">Sponsors</h1>
+            </div>
+        </div> 
+        <div class="row services-list block-1-2 block-tab-full">
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <a href="https://www.arcadiafund.org.uk/">
+                        <img src="images/sponsors/arcadia.jpg"/>
+                    </a>               
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <a href="https://elifesciences.org/">
+                        <img id="elife" src="images/sponsors/elife-cut.png"/>
+                    </a>                 
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <a href="https://www.hindawi.com/">
+                        <img src="images/sponsors/hindawi.png"/>
+                    </a>                   
+                </div>
+            </div>
+       </div> 
+    </section> -->
+ 
 
-                            </div>
+    <!-- speakers
+    ================================================== 
+    <section id="speakers" class="s-clients">
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-2">Invited speakers</h1>
+            </div>
+        </div>
+        <div class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+                <div class="testimonials">
+
+                    <div class="testimonials__slide">
+
+                        <p>Since 2015, Ginny has been developing a new team at Crossref encompassing outreach and education, user experience and support, and metadata strategy.</p>
+
+                        <img src="images/organisers/ginny.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name"><a href="https://twitter.com/GinnyLDN">Ginny Hendricks</a></span> 
+                            <span class="testimonials__pos">Crossref</span>
                         </div>
-                        <div class="col-xl-4 col-md-4 col-lg-4">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                        Links
-                                </h3>
-                                <ul>
-                                    <li><a target="_blank" href="2018/index.html">2018 edition</a></li>
-                                    <li><a target="_blank" href="2020/index.html">2020 edition</a></li>
-                                    <!-- <li><a target="_blank" href="speakers.html">Speakers</a></li>
-                                    <li><a target="_blank" href="contact.html">Contact</a></li> -->
-                                </ul>
-                            </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+
+                        <p>Dario is a social computing researcher and open knowledge advocate. He is the Director, Head of Research at the Wikimedia Foundation.</p>
+
+                        <img src="images/organisers/dario.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name"><a href="https://twitter.com/ReaderMeter">Dario Taraborelli</a></span> 
+                            <span class="testimonials__pos">Wikimedia Foundation / I4OC</span>
                         </div>
-                        <div class="col-xl-4 col-md-4 col-lg-4">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                        Venue
-                                </h3>
-                                <p>
-                                    University of Bologna <br>
-                                    via Zamboni 34, Bologna, Italy <br>
-                                    workshop@opencitations.net <br>
-                                    or contact us on <a href="https://github.com/workshop-oc/workshop-oc.github.io/issues">github</a>
-                                </p>
+
+                    </div>
+
+                </div>
+                
+            </div> 
+        </div> 
+    </section> -->
+  
+
+    <!-- participants
+    ================================================== -->
+    <section id="participants" class="s-about">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1 display-1--light">Participants</h1>   
+                <p>To be announced ...</p> 
+            </div>
+        </div> <!-- end section-header -->
+
+        <!--<div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+            
+            <div class="col-block">
+                <h5>Agata Rotondi</h5>
+                <div><span class="testimonials__pos">Research Associate, Department of Computer Science and Engineering, University of Bologna, Italy</span></div>
+                <div><a href="https://www.unibo.it/sitoweb/agata.rotondi2">website</a></div>
+            </div>
+            <div class="col-block">
+                <h5>Alessandra Auddino</h5>
+                <div><span class="testimonials__pos">Master student, DHDK, University of Bologna, Italy</span></div>
+            </div>
+            <div class="col-block">
+                <h5>Andrea Mannocci</h5>
+                <div><span class="testimonials__pos">Research Associate, Knowledge Media Institute - Open University, Milton Keynes, UK</span></div>
+                <div><a href="https://twitter.com/andremanno">@andremanno</a></div>
+            </div>
+            <div class="col-block">
+                <h5>Angelika Tsivinskaya</h5>
+                <div><span class="testimonials__pos">Researcher, Center for Institutional Analysis of Science &amp; Education, European University at Saint Petersburg, Russia</span></div>
+            </div>
+            <div class="col-block">
+                <h5>Angelo Di Iorio</h5>
+                <div><span class="testimonials__pos">Senior Assistant Professor, Department of Computer Science and Engineering, University of Bologna, Italy</span></div>
+                <div><a href="https://www.unibo.it/sitoweb/angelo.diiorio/en">website</a></div>
+            </div>
+            
+        </div>-->
+        
+    </section>
+
+    <!-- <section class="s-about">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">attendees</h3>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- photo and video
+    ================================================== -->
+    <section id="photo" class="s-services">
+        <div class="row">
+            <div class="col-full">
+                <p id="bg"><a href="images/group.jpg" target="_blank"><img src="images/group.jpg"></a></p>
+            </div>
+        </div>
+    </section> <!-- end s-home -->
+
+    <!-- travel info
+    ================================================== -->
+    <section id='venue' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">the venue</h3>
+                <h1 class="display-2">Welcome to Bologna</h1>
+                <p>The University of Bologna is the oldest university in the western world, and one of the largest universities in Italy (with about 90,000 enrolled students).</p><p>The workshop will take place at the University of Bologna in the heart of the city - <strong>the Department of History, Cultures, and Civilization (italian translation: Dipartimento di Storia, Culture e Civiltà), Piazza S. Giovanni in Monte, 2, Room "Aula Prodi"</strong>. From the train station you can either walk to DISCI (30') or take either bus 25 (direction “Deposito Due Madonne”, details at <a href="https://www.tper.it/bo-25">https://www.tper.it/bo-25</a>) or bus C (direction “Cestello”, details at <a href="https://www.tper.it/bo-c">https://www.tper.it/bo-c</a>).</p>
+                <p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.1937089854605!2d11.345926515243018!3d44.49069750588945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4b8ad09bd2f%3A0xf54dff048cb7cc26!2sPiazza%20S.%20Giovanni%20in%20Monte%2C%202%2C%2040124%20Bologna%20BO!5e0!3m2!1sen!2sit!4v1674313021563!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-glasses"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Get to Bologna</h3>
+                    <p>The airport “Guglielmo Marconi” is located at 15-20 minutes by car from the city centre. A direct train, <a href="https://www.marconiexpress.it/">Marconi Express</a>, leaves regularly from the Airport for Bologna Central Rail Station. The trip costs 11€. A taxi costs about 20€ (call a taxi at 0039 051 372727). 
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-bed"></i>
+                </div>  
+                <div class="service-text">
+                    <h3 class="h2">Accommodation</h3>
+                    <p>The organizers are negotiating with local hotels for rooms to be reserved and made available at special rates for participants. More information will soon be available.</p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-building"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">About the location</h3>
+                    <p><a href="https://youtu.be/ObBreSoNzZY">Bologna</a> is home to numerous prestigious cultural, economic and political institutions as well as one of the most impressive trade fair districts in Europe. In 2000 it was declared European capital of culture, and in 2006, a UNESCO "city of music". Bologna’s porticoes have been listed in the UNESCO World Heritage List in 2021. 
+                    </p>
+                </div>
+            </div>
+
+            <!-- <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-cube"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Packaging Design</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon"><i class="icon-lego-block"></i></div>
+                <div class="service-text">
+                    <h3 class="h2">Web Development</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div> -->
+
+        </div> <!-- end services-list -->
+    </section> <!-- end s-services -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <!--<div class="contact__line"></div>-->
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">For any enquiry</h3>
+                <h1 class="display-2 display-2--light">contact us</h1>
+            </div>
+        </div>
+
+        <div class="row contact-content" data-aos="fade-up">
+
+            <div class="contact-primary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                    <div class="cinfo">
+                        <h5>Where to Find Us</h5>
+                        <p>
+                            via Zamboni, 32 (first floor) | Bologna, BO | 40126 Italy
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Any Doubt?</h5>
+                        <p>open an issue on 
+                            <a href="https://github.com/workshop-oc/workshop-oc.github.io/issues">github</a>!<br>
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Email Us</h5>
+                        <p><a href="mailto:comms@opencitations.net">comms@opencitations.net</a></p>
+                    </div>
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <!-- <div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+
+                <div class="footer-logo"></div>
+                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+
+            </div>
+
+            <div class="col-six tab-full right footer-subscribe">
+
+                <h4>Get Notified</h4>
+                <p>Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.</p>
+
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>
+
+            </div>
+
+        </div> --> <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <!-- <span>© Copyright Glint 2017</span>  -->
+                    <span>All the contents related to the workshop are available under a <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a> license</span>
+                    <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>	
+                    <span>Banner image by <a href="https://www.instagram.com/paolo_wolf91/">Paolo Ciabocchi</a></span>
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="copy-right_text">
-                <div class="container">
-                    <div class="footer_border"></div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="copy_right text-center">All the contents related to the workshop are available under a CC0 license | Banner image by <a href="https://www.instagram.com/paolo_wolf91/">Paolo Ciabocchi</a> |
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
-                        </div>
-                    </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
                 </div>
             </div>
-        </footer>
-    <!-- footer_end -->
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
 
 
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
 
 
-
-
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.js"></script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
-
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
     <script src="js/main.js"></script>
+    <script src="js/countdown.jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('#countdown').countdown({
+           year: 2023,
+           month: 10,
+           day: 26
+       });
+       $("#days").removeClass("col-xs-6 col-sm-3 animated rotateIn");
+       $("#hours").removeClass("col-xs-6 col-sm-3 animated rotateIn");
+       $("#minutes").remove();
+       $("#seconds").remove();
+    });
+      
+    </script>
 
 </body>
 
