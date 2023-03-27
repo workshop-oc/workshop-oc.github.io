@@ -1,4 +1,4 @@
-/* =================================================================== 
+/* ===================================================================
  *
  *  Glint v1.0 Main Stylesheet
  *  11-20-2017
@@ -22,18 +22,18 @@
  *  # additional components
  *      ## alert box
  *      ## additional typo styles
- *      ## skillbars 
+ *      ## skillbars
  *  # reusable and common theme styles
  *      ## display headings
  *      ## section header
  *      ## slick slider
  *  # header styles
  *      ## header logo
- *      ## main navigation 
- *      ## mobile menu toggle 
- *  # home 
+ *      ## main navigation
+ *      ## mobile menu toggle
+ *  # home
  *      ## home content
- *      ## home social 
+ *      ## home social
  *      ## home animations
  *  # about
  *      ## about stats
@@ -111,7 +111,7 @@ body {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## links
  * ------------------------------------------------------------------- */
 a {
@@ -133,9 +133,9 @@ iframe {max-width: 100%;}
 
 /* ===================================================================
  * # typography & general theme styles
- * 
+ *
  * ------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, 
+h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "montserrat-medium", sans-serif;
     color: #000000;
@@ -353,7 +353,7 @@ hr {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## Lists
  * ------------------------------------------------------------------- */
 ol {
@@ -411,7 +411,7 @@ dd {
 
 .programme td { border-bottom: dotted 1px var(--font-color);}
 .programme td:nth-of-type(1) { width:20%;}
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## responsive video container
  * ------------------------------------------------------------------- */
 .video-container {
@@ -433,7 +433,7 @@ dd {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## floated image
  * ------------------------------------------------------------------- */
 img.pull-right {
@@ -449,13 +449,13 @@ img.pull-left {
 	text-align:center;
 }
 
-#bg img { /* Preserve aspet ratio */ 
+#bg img { /* Preserve aspet ratio */
 	border: 1px solid grey;
 	width: 100% !important;
 	max-width: 800px !important;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## tables
  * ------------------------------------------------------------------- */
 table {
@@ -494,8 +494,8 @@ th:last-child, td:last-child {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## Spacing 
+/* -------------------------------------------------------------------
+ * ## Spacing
  * ------------------------------------------------------------------- */
 button, .btn {
     margin-bottom: 1.2rem;
@@ -523,7 +523,7 @@ form,
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## pace.js styles - minimal
  * ------------------------------------------------------------------- */
 .pace {
@@ -764,7 +764,7 @@ label > .label-text {
     line-height: inherit;
 }
 
-label > input[type="checkbox"], 
+label > input[type="checkbox"],
 label > input[type="radio"] {
     margin: 0;
     position: relative;
@@ -772,7 +772,7 @@ label > input[type="radio"] {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## style placeholder text
  * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
@@ -798,7 +798,7 @@ label > input[type="radio"] {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## change autocomplete styles in chrome
  * ------------------------------------------------------------------- */
 input:-webkit-autofill,
@@ -930,13 +930,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* =================================================================== 
+/* ===================================================================
  * # additional components
  *
  * ------------------------------------------------------------------- */
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## alert box
  * ------------------------------------------------------------------- */
 .alert-box {
@@ -981,12 +981,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## additional typo styles 
+/* -------------------------------------------------------------------
+ * ## additional typo styles
  * ------------------------------------------------------------------- */
 
 
-/* drop cap 
+/* drop cap
  * ----------------------------------------------- */
 .drop-cap:first-letter {
     float: left;
@@ -1002,7 +1002,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* line definition style 
+/* line definition style
  * ----------------------------------------------- */
 .lining dt, .lining dd {
     display: inline;
@@ -1028,7 +1028,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* dictionary definition style 
+/* dictionary definition style
  * ----------------------------------------------- */
 .dictionary-style dt {
     display: inline;
@@ -1050,7 +1050,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
+/**
  * Pull Quotes
  * -----------
  * markup:
@@ -1097,7 +1097,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
+/**
  * Stats Tab
  * ---------
  * markup:
@@ -1150,8 +1150,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## skillbars 
+/* -------------------------------------------------------------------
+ * ## skillbars
  * ------------------------------------------------------------------- */
 .skill-bars {
     list-style: none;
@@ -1246,7 +1246,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## display headings
  * ------------------------------------------------------------------- */
 .display-1 {
@@ -1293,7 +1293,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * display headings
  * ------------------------------------------------------------------- */
@@ -1337,7 +1337,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## section header
  * ------------------------------------------------------------------- */
 .section-header {
@@ -1371,7 +1371,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * section-header
  * ------------------------------------------------------------------- */
@@ -1406,8 +1406,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## slick slider 
+/* -------------------------------------------------------------------
+ * ## slick slider
  * ------------------------------------------------------------------- */
 .slick-slider .slick-slide {
     outline: none;
@@ -1504,8 +1504,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## main navigation 
+/* -------------------------------------------------------------------
+ * ## main navigation
  * ------------------------------------------------------------------- */
 .header-nav {
     background: #0C0C0C;
@@ -1623,7 +1623,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     z-index: 800;
 }
 
-.header-nav__close span::before, 
+.header-nav__close span::before,
 .header-nav__close span::after {
     content: "";
     display: block;
@@ -1674,8 +1674,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## mobile menu toggle 
+/* -------------------------------------------------------------------
+ * ## mobile menu toggle
  * ------------------------------------------------------------------- */
 .header-menu-toggle {
     position: fixed;
@@ -1749,7 +1749,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * header
  * ------------------------------------------------------------------- */
@@ -1774,7 +1774,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ===================================================================
- * # home 
+ * # home
  *
  * ------------------------------------------------------------------- */
 .s-home {
@@ -1814,7 +1814,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## home content
  * ------------------------------------------------------------------- */
 .home-content {
@@ -1871,7 +1871,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-right: 0;
 }
 
-.home-content__buttons .btn:hover, 
+.home-content__buttons .btn:hover,
 .home-content__buttons .btn:focus {
     background: #FFFFFF !important;
     color: #000000;
@@ -1928,8 +1928,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## home social 
+/* -------------------------------------------------------------------
+ * ## home social
  * ------------------------------------------------------------------- */
 .home-social {
     font-family: "montserrat-regular", sans-serif;
@@ -2020,7 +2020,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## home animations
  * ------------------------------------------------------------------- */
 
@@ -2085,7 +2085,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * home
  * ------------------------------------------------------------------- */
@@ -2254,7 +2254,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## about stats
  * ------------------------------------------------------------------- */
 .about-stats {
@@ -2305,7 +2305,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * about
  * ------------------------------------------------------------------- */
@@ -2413,7 +2413,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## services list
  * ------------------------------------------------------------------- */
 .services-list {
@@ -2451,7 +2451,7 @@ html.no-csstransitions .home-content__main {
 
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * services
  * ------------------------------------------------------------------- */
@@ -2551,7 +2551,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
 .masonry:after {
@@ -2705,7 +2705,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* on hover 
+/* on hover
  * ----------------------------------------------- */
 .item-folio:hover .item-folio__thumb a::before {
     opacity: 1;
@@ -2736,7 +2736,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * works
  * ------------------------------------------------------------------- */
@@ -2780,7 +2780,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## slider
  * ------------------------------------------------------------------- */
 .clients-outer {
@@ -2803,7 +2803,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## testimonials
  * ------------------------------------------------------------------- */
 .clients-testimonials {
@@ -2852,7 +2852,7 @@ html.no-csstransitions .home-content__main {
     margin: 0 auto 1.2rem auto;
 }
 
-.clients-testimonials .testimonials__name, 
+.clients-testimonials .testimonials__name,
 .clients-testimonials .testimonials__pos {
     display: block;
 }
@@ -2903,7 +2903,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * clients
  * ------------------------------------------------------------------- */
@@ -2971,7 +2971,7 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # contact 
+ * # contact
  *
  * ------------------------------------------------------------------- */
 .s-contact {
@@ -3178,7 +3178,7 @@ html.no-csstransitions .home-content__main {
     color: white;
 }
 
-.contact-social li a:hover, 
+.contact-social li a:hover,
 .contact-social li a:focus {
     color: var(--main-theme-color);
 }
@@ -3187,7 +3187,7 @@ html.no-csstransitions .home-content__main {
     margin: 0;
 }
 
-.message-warning, 
+.message-warning,
 .message-success {
     display: none;
     background: #111111;
@@ -3244,8 +3244,8 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* --------------------------------------------------------------- 
- * ## loader animation 
+/* ---------------------------------------------------------------
+ * ## loader animation
  * --------------------------------------------------------------- */
 .s-loader {
     margin: 1.2rem auto 3rem;
@@ -3304,7 +3304,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * contact
  * ------------------------------------------------------------------- */
@@ -3403,7 +3403,7 @@ footer .row {
 }
 
 
-/* --------------------------------------------------------------- 
+/* ---------------------------------------------------------------
  * ## footer main
  * --------------------------------------------------------------- */
 .footer-main {
@@ -3529,7 +3529,7 @@ footer .row {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## go to top
  * ------------------------------------------------------------------- */
 .go-top {
@@ -3566,7 +3566,7 @@ footer .row {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
@@ -3665,15 +3665,15 @@ footer .row {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: 
+  -webkit-transition:
       opacity 0.2s ease-in-out,
         visibility 0.2s ease-in-out,
         -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-    -moz-transition:    
+    -moz-transition:
         opacity 0.2s ease-in-out,
         visibility 0.2s ease-in-out,
         -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-    transition:         
+    transition:
         opacity 0.2s ease-in-out,
         visibility 0.2s ease-in-out,
         transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
@@ -3766,7 +3766,7 @@ footer .row {
 .tooltip-top:focus:after {
   -webkit-transform: translateY(-12px);
   -moz-transform:    translateY(-12px);
-  transform:         translateY(-12px); 
+  transform:         translateY(-12px);
 }
 
 /* Left */
@@ -3792,7 +3792,7 @@ footer .row {
 .tooltip-left:focus:after {
   -webkit-transform: translateX(-12px);
   -moz-transform:    translateX(-12px);
-  transform:         translateX(-12px); 
+  transform:         translateX(-12px);
 }
 
 /* Bottom */
@@ -3817,7 +3817,7 @@ footer .row {
 .tooltip-bottom:focus:after {
   -webkit-transform: translateY(12px);
   -moz-transform:    translateY(12px);
-  transform:         translateY(12px); 
+  transform:         translateY(12px);
 }
 
 /* Right */
@@ -3841,7 +3841,7 @@ footer .row {
 .tooltip-right:focus:after {
   -webkit-transform: translateX(12px);
   -moz-transform:    translateX(12px);
-  transform:         translateX(12px); 
+  transform:         translateX(12px);
 }
 
 /* Move directional arrows down a bit for left/right tooltips */
