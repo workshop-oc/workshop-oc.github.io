@@ -95,3 +95,25 @@ ul#editions{
 ul#editions li::before {
   content: "> ";
 }
+
+
+@media (max-width: 992px) {
+	table tr{
+		table-layout: none !important;
+		width: 100% !important;
+		display: block;
+		border: none;
+	}
+	table th{
+		display: none;
+	}
+	table td{
+		display: block;
+		margin-top: 5px;
+		width: 100% !important;
+		border-bottom: none !important;
+	}
+  table td:first-child{
+    border-bottom: 1px dotted !important;
+  }
+}
