@@ -3,23 +3,11 @@
  *
  * ------------------------------------------------------------------- */
 
-var premiumOptions = $(".toggle_abstract");
-            $(premiumOptions).click(handleClick);
-
-            function handleClick() {
-              console.log("clicked");
-              var description = $(this).parent().find("section");
-              if (description.length) {
-                $(description).toggleClass("open closed");
-              };
-            };
-
-
 
 (function($) {
 
     "use strict";
-    
+
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
         mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
@@ -36,7 +24,7 @@ var premiumOptions = $(".toggle_abstract");
    /* Preloader
     * -------------------------------------------------- */
     var clPreloader = function() {
-        
+
         $("html").addClass('cl-preload');
 
         $WIN.on('load', function() {
@@ -44,16 +32,16 @@ var premiumOptions = $(".toggle_abstract");
             //force page scroll position to top at page refresh
             // $('html, body').animate({ scrollTop: 0 }, 'normal');
 
-            // will first fade out the loading animation 
+            // will first fade out the loading animation
             $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(300).fadeOut("slow");
-            }); 
-            
-            // for hero content animations 
+            });
+
+            // for hero content animations
             $("html").removeClass('cl-preload');
             $("html").addClass('cl-loaded');
-        
+
         });
     };
 
@@ -61,7 +49,7 @@ var premiumOptions = $(".toggle_abstract");
    /* Menu on Scrolldown
     * ------------------------------------------------------ */
     var clMenuOnScrolldown = function() {
-        
+
         var menuTrigger = $('.header-menu-toggle');
 
         $WIN.on('scroll', function() {
@@ -97,7 +85,7 @@ var premiumOptions = $(".toggle_abstract");
         // close menu by clicking the close button
         closeButton.on('click', function(e){
             e.preventDefault();
-            menuTrigger.trigger('click');	
+            menuTrigger.trigger('click');
         });
 
         // close menu clicking outside the menu itself
@@ -131,7 +119,7 @@ var premiumOptions = $(".toggle_abstract");
                     $size = $thumbLink.data('size').split('x'),
                     $width  = $size[0],
                     $height = $size[1];
-         
+
                 var item = {
                     src  : $href,
                     w    : $width,
@@ -163,12 +151,12 @@ var premiumOptions = $(".toggle_abstract");
             });
 
     };
-    
+
 
    /* Stat Counter
     * ------------------------------------------------------ */
     var clStatCount = function() {
-        
+
         var statSection = $(".about-stats"),
             stats = $(".stats__count");
 
@@ -190,7 +178,7 @@ var premiumOptions = $(".toggle_abstract");
                         });
                     });
 
-                } 
+                }
 
                 // trigger once only
                 this.destroy();
@@ -204,9 +192,9 @@ var premiumOptions = $(".toggle_abstract");
 
 
    /* Masonry
-    * ---------------------------------------------------- */ 
+    * ---------------------------------------------------- */
     var clMasonryFolio = function () {
-        
+
         var containerBricks = $('.masonry');
 
         containerBricks.imagesLoaded(function () {
@@ -289,17 +277,17 @@ var premiumOptions = $(".toggle_abstract");
                 }
             ]
         });
-    
+
     };
 
    /* Smooth Scrolling
     * ------------------------------------------------------ */
     var clSmoothScroll = function() {
-        
+
         $('.smoothscroll').on('click', function (e) {
             var target = this.hash,
             $target    = $(target);
-            
+
                 e.preventDefault();
                 e.stopPropagation();
 
@@ -322,7 +310,7 @@ var premiumOptions = $(".toggle_abstract");
    /* Placeholder Plugin Settings
     * ------------------------------------------------------ */
     var clPlaceholder = function() {
-        $('input, textarea, select').placeholder();  
+        $('input, textarea, select').placeholder();
     };
 
 
@@ -332,7 +320,7 @@ var premiumOptions = $(".toggle_abstract");
 
         $('.alert-box').on('click', '.alert-box__close', function() {
             $(this).parent().fadeOut(500);
-        }); 
+        });
 
     };
 
@@ -340,53 +328,53 @@ var premiumOptions = $(".toggle_abstract");
    /* Contact Form
     * ------------------------------------------------------ */
     var clContactForm = function() {
-        
+
         /* local validation */
         $('#contactForm').validate({
-        
+
             /* submit via ajax */
             submitHandler: function(form) {
-    
+
                 var sLoader = $('.submit-loader');
-    
+
                 $.ajax({
-    
+
                     type: "POST",
                     url: "inc/sendEmail.php",
                     data: $(form).serialize(),
-                    beforeSend: function() { 
-    
+                    beforeSend: function() {
+
                         sLoader.slideDown("slow");
-    
+
                     },
                     success: function(msg) {
-    
+
                         // Message was sent
                         if (msg == 'OK') {
-                            sLoader.slideUp("slow"); 
+                            sLoader.slideUp("slow");
                             $('.message-warning').fadeOut();
                             $('#contactForm').fadeOut();
                             $('.message-success').fadeIn();
                         }
                         // There was an error
                         else {
-                            sLoader.slideUp("slow"); 
+                            sLoader.slideUp("slow");
                             $('.message-warning').html(msg);
                             $('.message-warning').slideDown("slow");
                         }
-    
+
                     },
                     error: function() {
-    
-                        sLoader.slideUp("slow"); 
+
+                        sLoader.slideUp("slow");
                         $('.message-warning').html("Something went wrong. Please try again.");
                         $('.message-warning').slideDown("slow");
-    
+
                     }
-    
+
                 });
             }
-    
+
         });
     };
 
@@ -394,7 +382,7 @@ var premiumOptions = $(".toggle_abstract");
    /* Animate On Scroll
     * ------------------------------------------------------ */
     var clAOS = function() {
-        
+
         AOS.init( {
             offset: 200,
             duration: 600,
@@ -410,7 +398,7 @@ var premiumOptions = $(".toggle_abstract");
    /* AjaxChimp
     * ------------------------------------------------------ */
     var clAjaxChimp = function() {
-        
+
         $('#mc-form').ajaxChimp({
             language: 'es',
             url: cfg.mailChimpURL
@@ -435,7 +423,7 @@ var premiumOptions = $(".toggle_abstract");
             3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
             4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
             5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
-        } 
+        }
 
     };
 
@@ -443,13 +431,13 @@ var premiumOptions = $(".toggle_abstract");
    /* Back to Top
     * ------------------------------------------------------ */
     var clBackToTop = function() {
-        
+
         var pxShow  = 500,         // height on which the button will show
         fadeInTime  = 400,         // how slow/fast you want the button to show
         fadeOutTime = 400,         // how slow/fast you want the button to hide
         scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
         goTopButton = $(".go-top")
-        
+
         // Show or hide the sticky footer button
         $(window).on('scroll', function() {
             if ($(window).scrollTop() >= pxShow) {
@@ -464,7 +452,7 @@ var premiumOptions = $(".toggle_abstract");
    /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
-        
+
         clPreloader();
         clMenuOnScrolldown();
         clOffCanvas();
@@ -481,6 +469,6 @@ var premiumOptions = $(".toggle_abstract");
         clBackToTop();
 
     })();
-        
-        
+
+
 })(jQuery);

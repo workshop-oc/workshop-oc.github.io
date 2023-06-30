@@ -5,7 +5,7 @@
 }
 
 .home{
-  
+
 }
 
 #program {
@@ -63,6 +63,21 @@ section{
   padding-top: 90px !important;
 }
 
+section .programme{
+  color: gray;
+}
+
+.programme section{
+    padding-top: 20px !important;
+}
+
+#programme_container h3{
+  margin-top: 100px !important;
+}
+
+.programme td{
+    border-bottom: 1px dotted;
+}
 
 .s-contact {
     background-color: white !important;
@@ -75,7 +90,7 @@ section{
 }
 
 ul#editions{
-  list-style-type: none;  
+  list-style-type: none;
 }
 ul#editions li::before {
   content: "> ";
