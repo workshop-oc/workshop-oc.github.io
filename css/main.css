@@ -72,7 +72,7 @@ td section {padding-top: 1em; }
 
 .open {
   max-height: 1000px;
-  overflow: hidden;
+  overflow: scroll;
   transition: all 0.5s ease;
   will-change: transform;
 }
