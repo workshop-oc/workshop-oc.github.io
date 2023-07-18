@@ -250,26 +250,9 @@ References
 </tr>
 
 
-<tr><td class="p-time">14:40</td><td>[Selected talk] Martin Czygan (Institute of Neuroinformatics, University of Zurich and ETH Zurich) <em class="toggle_abstract">Semantic Metadata Matching for Better Bibliography Linking</em><section class="closed">
+<tr><td class="p-time">14:40</td><td>[Selected talk] Martin Czygan (Internet Archive) <em class="toggle_abstract">Refcat Citation Graph Updates</em><section class="closed">
 
-<p>Traditional approaches to quantitative research assessment rely heavily on bibliometrics, which include citation count, h-index, and impact factor. However, the accuracy of bibliometrics is tied to the quality of bibliography linking (i.e. the identification of the work being referenced in each bibliography entry). A recent study [1] showed that only two out of five freely available bibliographic databases had full bibliography linking accuracy for at least 30% of its PubMed papers. Given the substantial influence that bibliometrics can have on career prospects and perception of scholarly contribution, we believe there is a pressing need for better bibliography linking methods.</p>
-
-<p>The primary form of bibliography linking has been through Digital Object Identifiers (DOIs). Many publishers such as Elsevier and Springer strongly encourage authors to include DOIs in their bibliographies and make these DOIs openly available via CrossRef. Databases derived from CrossRef such as MAG, COCI, and Dimensions can therefore perform bibliography linking by DOI. The reliability of this method is supported by the aforementioned study [1], which showed that the CrossRef-derived databases had better bibliography linking than S2ORC, a database that does not utilise CrossRef. However, this method is likely to perform poorly on works from certain domains (e.g. machine learning) specifying DOIs is not the norm and works from preprint repositories (e.g. arXiv) that do not have DOIs.</p>
-
-<p>Another approach to bibliography linking is lexical metadata matching, such as the trigram-based matching of titles used in the construction of S2ORC. The primary advantage of this method is in its independence from author-provided DOIs and thus broader applicability; however, S2ORC was shown to have the lowest bibliography linking quality out of the five databases evaluated by the aforementioned study [1].</p>
-
-<p>We propose to explore semantic metadata matching for bibliography linking. This involves using Natural Language Processing (NLP) to compute a vector representation for each bibliography entry and for each paper based on their metadata, then performing linking via a nearest neighbour search. We will benchmark the performance of multiple NLP models, ranging from general representation models (e.g. Sent2vec [2], SBERT [3]) to models designed specifically for scientific text (e.g. HAtten [4], SciNCL [5]). We will focus on citations between PubMed Central Open Access (PMCOA) papers because those ground-truth bibliography links are freely and openly available. Finally, we will also experiment with various linking distance thresholds to assess the trade-off between linking precision and recall.</p>
-
-References
-<p>
-  [1] Finding citations for PubMed: a large-scale comparison between five freely available bibliographic data sources (Liang et al., 2021).<br>
-  [2] Unsupervised learning of sentence embeddings using compositional n-gram features (Pagliardini et al., 2017).<br>
-  [3] Sentence-bert: Sentence embeddings using siamese bert-networks (Reimers and Iryna, 2019).<br>
-  [4] Local citation recommendation with hierarchical-attention text encoder and SciBERT-based reranking (Gu et al., 2022).<br>
-  [5] Neighborhood contrastive learning for scientific document representations with citation embeddings (Ostendorff et al., 2022).<br>
-</p>
-
-
+<p>As part of its scholarly data efforts, the Internet Archive released a first version of a citation graph dataset, named refcat, derived from scholarly publications and additional data sources, in October 2021 [1]. Since then, we have been updating the raw data input as well as refining the derivation process. In this talk we want to give an update on the project and the dataset.</p>
 
 </section>
 </td>
