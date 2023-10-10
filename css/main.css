@@ -410,8 +410,6 @@ dd {
     margin: 0 0 0 2rem;
 }
 
-.programme td { border-bottom: dotted 1px var(--font-color);}
-.programme td:nth-of-type(1) { width:20%;}
 /* -------------------------------------------------------------------
  * ## responsive video container
  * ------------------------------------------------------------------- */
@@ -3861,3 +3859,11 @@ footer .row {
 
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* ----------------------- */
+
+@media only screen and (max-width: 800px) {
+    .imp-btn {
+    }
+}
