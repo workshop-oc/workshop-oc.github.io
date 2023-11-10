@@ -96,6 +96,18 @@ ul#editions li::before {
   content: "> ";
 }
 
+.btn-in-body{
+	background: none;
+	color: white;
+	border: solid white 2px;
+}
+
+.btn-in-body:hover{
+	background: none;
+	color: black;
+	border: solid black 2px;
+}
+
 
 @media (max-width: 992px) {
 	table tr{
