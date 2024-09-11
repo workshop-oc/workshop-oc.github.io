@@ -1483,8 +1483,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: absolute;
     margin: 0;
     padding: 0;
-    left: 5%;
-    top: 100%;
+    left: 40px;
+    top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -1497,7 +1497,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0;
     outline: 0;
     border: none;
-    width: 150px;
+    width: 80px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -1543,7 +1543,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-nav h3 {
     font-family: "montserrat-semibold", sans-serif;
-    font-size: 18px;
+    font-size: 11px;
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: .25rem;
@@ -1585,7 +1585,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     list-style: none;
     display: inline-block;
     margin: 0;
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 .header-nav__social li {
@@ -1595,7 +1595,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-nav__social li a {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.15);
 }
 
 .header-nav__social li a:hover,
@@ -1708,10 +1708,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     position: absolute;
     top: 0;
-    left: -100px;
-    width: 150px;
+    left: -70px;
+    width: 70px;
     padding-left: 12px;
-    font-size: 18pt;
 }
 
 .header-menu-icon {
@@ -1956,8 +1955,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-social li a {
     display: block;
-    width: 53px;
-    height: 53px;
+    width: 33px;
+    height: 33px;
 }
 
 .home-social i, .home-social span {
@@ -1969,13 +1968,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social i {
-    font-size: 28px;
+    font-size: 14px;
     right: 0;
     text-align: center;
     display: inline-block;
-    width: 53px;
-    height: 53px;
-    line-height: calc(53px - 4px);
+    width: 33px;
+    height: 33px;
+    line-height: calc(33px - 4px);
     border: 2px solid #FFFFFF;
     border-radius: 50%;
 }
@@ -1994,13 +1993,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     transform-origin: 100% 50%;
 }
 
-.home-social i:hover {
+.home-social li:hover span {
     opacity: 1;
     visibility: visible;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    color: var(--main-theme-color);
 }
 
 
