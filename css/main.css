@@ -116,17 +116,17 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-    color: #0087cc;
+    color: var(--a-main-color);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 a:hover, a:focus, a:active {
-    color: var(--main-theme-color);
+    text-decoration: underline;
 }
 
 a:hover, a:active {
-    outline: 0;
+    outline: 1;
 }
 
 iframe {max-width: 100%;}
@@ -449,9 +449,10 @@ img.pull-left {
 }
 
 #bg img { /* Preserve aspet ratio */
-	border: 1px solid grey;
+	border: 1px solid darkgray;
 	width: 100% !important;
-	max-width: 800px !important;
+	max-width: 1000px !important;
+	border-radius: 10px;
 }
 
 /* -------------------------------------------------------------------
