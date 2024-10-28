@@ -47,8 +47,9 @@
 
 .circle-img{
   border-radius: 50%;
-  max-width: 170px;
+  max-width: 270px;
   min-width: 120px;
+  width: 100%;
 }
 
 #organisers .col-block{
@@ -56,7 +57,7 @@
   padding-bottom: 25px;
 }
 
-#organisers h5{
+#organisers h3, #speakers h3{
   margin: 2px;
 }
 
