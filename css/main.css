@@ -56,9 +56,9 @@
 
 
 /* MD abstracts */
-td em.toggle_abstract {display: inline-block; color: white;}
-td em.toggle_abstract:hover {text-decoration: underline; cursor: pointer;}
-td section {padding-top: 1em; }
+em.toggle-section {display: inline-block;}
+em.toggle-section:hover {text-decoration: underline; cursor: pointer;}
+section {padding-top: 1em; }
 .closed {
   overflow: hidden;
   max-height: 0;
@@ -2249,17 +2249,17 @@ html.no-csstransitions .home-content__main {
 }
 
 .about-desc {
-    font-size: 2.4rem;
+    /*font-size: 2.4rem;
     line-height: 1.75;
     text-align: center;
-    max-width: 1024px;
+    max-width: 1024px;*/
 }
 
 
 /* -------------------------------------------------------------------
  * ## about stats
  * ------------------------------------------------------------------- */
-.about-stats {
+.gen-section {
     text-align: center;
 }
 
@@ -2316,11 +2316,11 @@ html.no-csstransitions .home-content__main {
         font-size: 2.2rem;
         max-width: 940px;
     }
-    .about-stats {
+    .gen-section {
         padding-top: 3rem;
         padding-bottom: 3.9rem;
     }
-    .about-stats {
+    .gen-section {
         max-width: 800px;
     }
     .stats__col {
@@ -2360,7 +2360,7 @@ html.no-csstransitions .home-content__main {
     .about-desc {
         font-size: 1.9rem;
     }
-    .about-stats {
+    .gen-section {
         padding-top: 0;
     }
     .stats__col {

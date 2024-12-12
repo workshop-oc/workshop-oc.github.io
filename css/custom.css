@@ -87,6 +87,9 @@ section .programme{
     background-size: cover !important;
   }
 
+#about{
+  font-size: 1.3em;
+}
 #about .subhead{
   color: white;
 }
@@ -108,6 +111,25 @@ ul#editions li::before {
 	background: none;
 	color: black;
 	border: solid black 2px;
+}
+
+.section-toggle-header{
+  font-size: 1.2em;
+  width: 100%;
+  background-color: rgba(215,215,215,0.2);
+  text-align: left;
+  padding: 10px;
+  font-family: "lora-regular", serif;
+}
+
+.section-toggle-body{
+  font-size: 1em;
+  width: 100%;
+  background-color: rgba(215,215,215,0.2);
+  padding: 0px !important;
+  border-bottom: 2px solid gray;
+  text-align: left;
+  padding-left: 20px !important;
 }
 
 
