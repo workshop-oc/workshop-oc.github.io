@@ -18,16 +18,55 @@
 }
 
 .programme tr.session td{
-  color: var(--main-theme-color);
+  /*color: var(--main-theme-color);*/
+  color: gray;
   border-bottom: dotted 1px white;
+  font-size: 0.8em;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
+.programme tr.session .toggle-abstract{
+  padding-left: 10px;
+  text-decoration: underline;
+  color: lightgray;
+}
+.programme tr.session .toggle-abstract:hover{
+  cursor: pointer;
+}
+.programme tr.session.no-border td{
+  border-style: hidden;
+}
+.programme tr.session.first td{
+  padding-top: 20px;
+}
 .programme tr.session td:first-child {
   padding-left: 50px;
 }
-
+.programme tr.session td:nth-child(2) {
+  padding-left: 65px;
+}
 .programme h4{
   color: var(--main-theme-color)!important;
+}
+
+.programme .toggle-poster{
+  text-decoration: underline;
+  color: lightgray;
+}
+.programme .toggle-poster:hover{
+  cursor: pointer;
+}
+.programme p.no-border{
+  border-style: hidden;
+}
+.programme .p-poster{
+  padding-left: 50px;
+  color: gray;
+  border-bottom: dotted 1px white;
+  font-size: 0.8em;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 @media (max-width: 768px) {
