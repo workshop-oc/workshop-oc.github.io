@@ -1859,9 +1859,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__buttons .btn {
-    width: 215px;
+    width: fit-content();
     border-color: #FFFFFF;
-    color: #FFFFFF;
+    color: black;
     margin: 1.5rem 1.5rem 0 0;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
