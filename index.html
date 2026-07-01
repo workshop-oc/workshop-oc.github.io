@@ -667,26 +667,26 @@ document.querySelectorAll('.reveal').forEach(el=>revealer.observe(el));
   const pts = Array.from({length:N}, () => ({
     x: Math.random()*W, y: Math.random()*H
   }));
-  pts.forEach((p,i)=>{
-    for(let j=i+1;j<pts.length;j++){
-      const q = pts[j];
-      const d = Math.hypot(p.x-q.x, p.y-q.y);
-      if(d < 180 && Math.random() < 0.35){
-        const line = document.createElementNS(NS,'line');
-        line.setAttribute('x1',p.x); line.setAttribute('y1',p.y);
-        line.setAttribute('x2',q.x); line.setAttribute('y2',q.y);
-        svg.appendChild(line);
-      }
-    }
-  });
-  pts.forEach((p,i)=>{
-    const c = document.createElementNS(NS,'circle');
-    c.setAttribute('cx',p.x); c.setAttribute('cy',p.y);
-    c.setAttribute('r', 2.4 + Math.random()*1.6);
-    if(i % 4 === 0) c.classList.add('pulse');
-    c.style.animationDelay = (Math.random()*3)+'s';
-    svg.appendChild(c);
-  });
+  // pts.forEach((p,i)=>{
+  //   for(let j=i+1;j<pts.length;j++){
+  //     const q = pts[j];
+  //     const d = Math.hypot(p.x-q.x, p.y-q.y);
+  //     if(d < 180 && Math.random() < 0.35){
+  //       const line = document.createElementNS(NS,'line');
+  //       line.setAttribute('x1',p.x); line.setAttribute('y1',p.y);
+  //       line.setAttribute('x2',q.x); line.setAttribute('y2',q.y);
+  //       svg.appendChild(line);
+  //     }
+  //   }
+  // });
+  // pts.forEach((p,i)=>{
+  //   const c = document.createElementNS(NS,'circle');
+  //   c.setAttribute('cx',p.x); c.setAttribute('cy',p.y);
+  //   c.setAttribute('r', 2.4 + Math.random()*1.6);
+  //   if(i % 4 === 0) c.classList.add('pulse');
+  //   c.style.animationDelay = (Math.random()*3)+'s';
+  //   svg.appendChild(c);
+  // });
 })();
 </script>
 </body>
