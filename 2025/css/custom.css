@@ -1,0 +1,155 @@
+:root{
+  --main-theme-color: #4c956c;
+  --a-main-color: #1152BF;
+  --font-color: black;
+  --dark-gray: #3b3b3b;
+}
+
+.home{
+
+}
+
+#program {
+  color: white !important;
+}
+#countdown {
+  margin-top: 15px;
+  text-align: center;
+}
+#countdown #seconds, #minutes{
+  display: none;
+}
+#countdown #days{
+  display: inline-block;
+  margin: 0 auto;
+}
+#countdown #hours{
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: 40px;
+}
+#countdown .time .digit_part{
+  background: white;
+  font-size: 1.2em;
+  margin-right: 3px;
+  padding: 8px;
+  border-radius: 5px;
+  border: solid 0.5px var(--dark-gray);
+}
+#countdown .label{
+  display: block;
+  text-align: center;
+  color: white;
+  font-weight: 1000;
+  text-transform: uppercase;
+  font-size: 0.65em;
+}
+
+.circle-img{
+  border-radius: 50%;
+  max-width: 270px;
+  min-width: 120px;
+  width: 100%;
+}
+
+#organisers .col-block{
+  padding-top: 0px;
+  padding-bottom: 25px;
+}
+
+#organisers h3, #speakers h3{
+  margin: 2px;
+}
+
+section{
+  padding-top: 90px !important;
+}
+
+section .programme{
+  color: gray;
+}
+
+.programme section{
+    padding-top: 20px !important;
+}
+
+#programme_container h3{
+  margin-top: 100px !important;
+}
+
+.programme td{
+    border-bottom: 1px dotted;
+}
+
+.s-contact {
+    background-color: white !important;
+    background-image: url("../images/bo_background_crop.jpg") !important;
+    background-size: cover !important;
+  }
+
+#about{
+  font-size: 1.3em;
+}
+#about .subhead{
+  color: white;
+}
+
+ul#editions{
+  list-style-type: none;
+}
+ul#editions li::before {
+  content: "> ";
+}
+
+.btn-in-body{
+	background: none;
+	color: white;
+	border: solid white 2px;
+}
+
+.btn-in-body:hover{
+	background: none;
+	color: black;
+	border: solid black 2px;
+}
+
+.section-toggle-header{
+  font-size: 1.2em;
+  width: 100%;
+  background-color: rgba(215,215,215,0.2);
+  text-align: left;
+  padding: 10px;
+  font-family: "lora-regular", serif;
+}
+
+.section-toggle-body{
+  font-size: 1em;
+  width: 100%;
+  background-color: rgba(215,215,215,0.2);
+  padding: 0px !important;
+  border-bottom: 2px solid gray;
+  text-align: left;
+  padding-left: 20px !important;
+}
+
+
+@media (max-width: 992px) {
+	table tr{
+		table-layout: none !important;
+		width: 100% !important;
+		display: block;
+		border: none;
+	}
+	table th{
+		display: none;
+	}
+	table td{
+		display: block;
+		margin-top: 5px;
+		width: 100% !important;
+		border-bottom: none !important;
+	}
+  table td:first-child{
+    border-bottom: 1px dotted !important;
+  }
+}
