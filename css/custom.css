@@ -5,3 +5,7 @@
 .wooc-sponsor tbody th { text-align: left; font-weight: 400; }
 .wooc-sponsor td { text-align: center; }
 .wooc-sponsor .wooc-note { font-style: italic; }
+
+h3 {
+  margin-top: 20px;
+}
